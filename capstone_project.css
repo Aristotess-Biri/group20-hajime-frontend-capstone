@@ -1,63 +1,33 @@
-/* ========================================
-   CSS RESET
-   ======================================== */
-
-/* 1. Box sizing
----------------------------------------- */
+/* =========================================================
+   01. CSS RESET
+========================================================= */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-
-/* 2. Remove default margin and padding
----------------------------------------- */
-
-* {
   margin: 0;
   padding: 0;
 }
 
 
-/* 3. Document defaults
----------------------------------------- */
-
 html {
   scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
 }
 
 
 body {
   min-height: 100vh;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  background: var(--color-background);
+  color: var(--color-text);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-
-/* 4. Remove default list styling
----------------------------------------- */
-
-ul,
-ol {
-  list-style: none;
-}
-
-
-/* 5. Remove default link styling
----------------------------------------- */
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-
-/* 6. Images and media
----------------------------------------- */
 
 img,
 picture,
@@ -69,53 +39,35 @@ video {
 }
 
 
-/* Prevent distorted images */
-
-img {
-  height: auto;
-}
-
-
-/* 7. Form elements
----------------------------------------- */
-
 button,
-input,
-textarea,
-select {
+input {
   font: inherit;
 }
 
 
-/* 8. Buttons
----------------------------------------- */
-
 button {
-  border: 0;
-  background: none;
+  border: none;
   cursor: pointer;
 }
 
 
-/* 9. Textareas
----------------------------------------- */
-
-textarea {
-  resize: vertical;
+input {
+  border: none;
+  outline: none;
 }
 
 
-/* 10. Tables
----------------------------------------- */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 table {
+  width: 100%;
   border-collapse: collapse;
-  border-spacing: 0;
 }
 
-
-/* 11. Headings
----------------------------------------- */
 
 h1,
 h2,
@@ -123,323 +75,228 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
+  font: inherit;
 }
 
 
-/* 12. Form controls
----------------------------------------- */
-
-input,
-button,
-textarea,
-select {
-  outline: none;
+p {
+  margin: 0;
 }
 
 
-/* 13. Better focus accessibility
----------------------------------------- */
-
-:focus-visible {
-  outline: 2px solid #1677ff;
-  outline-offset: 2px;
-}
-
-
-/* 14. Fieldsets
----------------------------------------- */
-
-fieldset {
-  border: 0;
-}
-
-
-/* 15. Root application
----------------------------------------- */
-
-#root {
-  min-height: 100vh;
-}
-
-
-
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
-
-@media (max-width: 768px) {
-
-  :root {
-    --page-padding-x: 16px;
-    --page-padding-y: 24px;
-  }
-
-
-  .planet-card {
-    padding: var(--space-4);
-  }
-
-
-  .planet-header {
-    align-items: flex-start;
-  }
-
-
-  .planet-stats {
-    grid-template-columns: 1fr;
-  }
-
-
-  .planet-facts {
-    grid-template-columns: 1fr;
-  }
-
-
-  .footer {
-    flex-direction: column;
-  }
-
-
-  .planet-table {
-    overflow-x: auto;
-  }
-
-
-  .planet-table table {
-    min-width: 600px;
-  }
-}
-
-
-
-/* ========================================
-   DESIGN VARIABLES
-   ======================================== */
+/* =========================================================
+   02. DESIGN VARIABLES
+========================================================= */
 
 :root {
 
-  /* ----------------------------------------
-     COLORS
-     ---------------------------------------- */
+  /* -------------------------------------------------------
+     LIGHT MODE:COLORS
+  ------------------------------------------------------- */
 
-  /* Page */
+  --color-primary: #0079ff;
+  --color-primary-dark: #164baf;
+  --color-primary-light: #60abff;
+
   --color-background: #f6f8ff;
+  --color-background-light: #f2f7ff;
+
   --color-surface: #ffffff;
 
-  /* Primary */
-  --color-primary: #1677e8;
-  --color-primary-dark: #1554b8;
-  --color-primary-light: #d6e5ff;
+  --color-text: #2b3442;
+  --color-text-dark: #0f2a44;
+  --color-text-secondary: #4b6a9b;
+  --color-text-muted: #90a4d4;
 
-  /* Text */
-  --color-text-primary: #172033;
-  --color-text-secondary: #53627a;
-  --color-text-muted: #8290a7;
-  --color-text-light: #a3afc1;
+  --color-black: #212121;
+  --color-white: #ffffff;
 
-  /* Borders */
-  --color-border: #dce4f0;
-  --color-border-light: #e9eef6;
-
-  /* Table */
-  --color-table-header: #2058b5;
-  --color-table-section: #d5e4fb;
-  --color-table-row: #f2f6fc;
-
-  /* Status */
-  --color-success: #238636;
-  --color-danger: #d93025;
-  --color-warning: #f0a000;
+  --color-border: #d1e3ff;
 
 
-  /* ----------------------------------------
+
+  /* -------------------------------------------------------
      TYPOGRAPHY
-     ---------------------------------------- */
+  ------------------------------------------------------- */
 
-  --font-family-primary:
-    "Inter",
-    "Segoe UI",
-    Arial,
-    sans-serif;
+  --font-body: "Space Mono", monospace;
+  --font-heading: "Inter", sans-serif;
 
-  --font-family-mono:
-    "Roboto Mono",
-    "Courier New",
-    monospace;
-
-
-  /* Font sizes */
-
-  --font-size-xs: 0.625rem;     /* 10px */
-  --font-size-sm: 0.75rem;      /* 12px */
-  --font-size-md: 0.875rem;     /* 14px */
-  --font-size-base: 1rem;       /* 16px */
-  --font-size-lg: 1.125rem;     /* 18px */
-  --font-size-xl: 1.25rem;      /* 20px */
-  --font-size-2xl: 1.5rem;      /* 24px */
-  --font-size-3xl: 2rem;        /* 32px */
-
-
-  /* Font weights */
+  --font-size-xs: 0.8125rem;
+  --font-size-sm: 0.9375rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.375rem;
+  --font-size-3xl: 1.625rem;
+  --font-size-4xl: 2rem;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
 
-  /* ----------------------------------------
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-wide: 0.15625rem;
+
+
+  /* -------------------------------------------------------
      SPACING
-     ---------------------------------------- */
+  ------------------------------------------------------- */
 
-  --space-1: 0.25rem;   /* 4px */
-  --space-2: 0.5rem;    /* 8px */
-  --space-3: 0.75rem;   /* 12px */
-  --space-4: 1rem;      /* 16px */
-  --space-5: 1.25rem;   /* 20px */
-  --space-6: 1.5rem;    /* 24px */
-  --space-7: 1.75rem;   /* 28px */
-  --space-8: 2rem;      /* 32px */
-  --space-10: 2.5rem;   /* 40px */
-  --space-12: 3rem;     /* 48px */
-  --space-16: 4rem;     /* 64px */
-
-
-  /* ----------------------------------------
-     BORDER RADIUS
-     ---------------------------------------- */
-
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-  --radius-full: 9999px;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 2.5rem;
+  --space-9: 3rem;
+  --space-10: 3.5rem;
+  --space-11: 4rem;
+  --space-12: 5rem;
+  --space-13: 8.125rem;
 
 
-  /* ----------------------------------------
-     SHADOWS
-     ---------------------------------------- */
-
-  --shadow-sm:
-    0 2px 6px rgba(31, 55, 88, 0.08);
-
-  --shadow-md:
-    0 6px 18px rgba(31, 55, 88, 0.10);
-
-  --shadow-lg:
-    0 12px 30px rgba(31, 55, 88, 0.12);
-
-
-  /* ----------------------------------------
+  /* -------------------------------------------------------
      LAYOUT
-     ---------------------------------------- */
+  ------------------------------------------------------- */
 
-  --container-width: 730px;
+  --container-width: 45.625rem;
 
-  --content-width: 100%;
+  --header-height: 3.25rem;
 
-  --page-padding-x: 24px;
-  --page-padding-y: 40px;
+  --search-height: 4.3125rem;
 
+  --profile-image-size: 4rem;
 
-  /* ----------------------------------------
-     COMPONENT SIZES
-     ---------------------------------------- */
-
-  --header-height: 48px;
-
-  --search-height: 44px;
-
-  --button-height: 36px;
-
-  --avatar-size: 54px;
+  --stats-height: 4rem;
 
 
-  /* ----------------------------------------
+  /* -------------------------------------------------------
+     BORDER RADIUS
+  ------------------------------------------------------- */
+
+  --radius-sm: 0.625rem;
+  --radius-md: 0.9375rem;
+  --radius-lg: 1rem;
+  --radius-full: 62.4375rem;
+
+
+  /* -------------------------------------------------------
+     SHADOW
+  ------------------------------------------------------- */
+
+  --shadow-card:
+    0 16px 30px -10px rgba(70, 96, 187, 0.20);
+
+
+  /* -------------------------------------------------------
      TRANSITIONS
-     ---------------------------------------- */
+  ------------------------------------------------------- */
 
   --transition-fast: 150ms ease;
-
   --transition-normal: 250ms ease;
 
-  --transition-slow: 350ms ease;
 }
 
 
-/* ========================================
-   BASE STYLES
-   ======================================== */
 
-body {
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
+/* =========================================================
+   DARK MODE:COLORS
+========================================================= */
 
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-regular);
+:root {
 
-  min-height: 100vh;
+    /* ---------------------------------
+       Colors
+    --------------------------------- */
+
+    --color-bg: #141D2F;
+
+    --color-surface: #1E2A47;
+
+    --color-surface-dark: #101A30;
+
+    --color-primary: #0079FF;
+
+    --color-primary-dark: #164BAF;
+
+    --color-primary-light: #60ABFF;
+
+    --color-text: #FFFFFF;
+
+    --color-text-primary: #2B3442;
+
+    --color-text-secondary: #4B6A9B;
+
+    --color-text-muted: #90A4D4;
+
+    --color-text-dark: #0F2A44;
+
+    --color-black: #212121;
+
+    --color-white: #FFFFFF;
+
+    --color-light-blue: #D1E3FF;
+
+    --color-light-bg: #F2F7FF;
+
+    
+    /* ---------------------------------
+       Shadows
+    --------------------------------- */
+
+    --shadow-card: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
+
+    /* ---------------------------------
+       Borders
+    --------------------------------- */
+
+    --border-light: 2px solid #FFFFFF;
+
+    --border-dark: 1px solid rgba(255, 255, 255, 0.15);
+
 }
 
 
-/* ========================================
-   MAIN PAGE STRUCTURE
-   ======================================== */
-.page {
-  width: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: var(--page-padding-y) var(--page-padding-x);
-}
 
 
-.container {
-  width: 100%;
-  max-width: var(--container-width);
-
-  margin-inline: auto;
-}
-
-
-/* ========================================
-   HEADER/NAVIGATION SECTION
-=========================================== */
+/* =========================================================
+   01. HEADER SECTION
+========================================================= */
 
 
 
-/* ========================================
-   SEARCH BOX
-=========================================== */
+/* =========================================================
+   02. SEARCH BOX SECTION
+========================================================= */
 
 
 
-
-/* ========================================
-   PLANET CARD SECTION
-========================================== */
-
+/* =========================================================
+   03. PLANET CARD SECTION
+========================================================= */
 
 
 
-/* ========================================
-     FACTS INTRODUCTION SECTION
-=========================================== */
+/* =========================================================
+   04. PLANET INFORMATION SECTION
+========================================================= */
 
 
 
-/* ========================================
-   PLANETARY FACTS SECTION
-========================================= */
+/* =========================================================
+   05. TABLE SECTION
+========================================================= */
 
 
 
+/* =========================================================
+   06. FOOTER SECTION
+========================================================= */
 
-/* ========================================
-   FOOTER SECTION
-=========================================== */
