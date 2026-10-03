@@ -92,7 +92,7 @@ ul, ol {
    --color-bg-main: #F6F8FF;
    --color-bg-surface: #FFFFFF;
 
-   --color-primary: #0079FF; /* main buttons/search icon/focus states/profile blue text */
+   --color-primary: #0079FF; /* main buttons/search icon/focus states */
    --color-primary-light: #60ABFF; /* buttons hover */
 
    /* header */
