@@ -1,5 +1,5 @@
 /* =========================================================
-   01. CSS RESET
+   01. CSS RESET. Owner: Group A (Foundations) 
 ========================================================= */
 
 *,
@@ -69,23 +69,17 @@ table {
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font: inherit;
-}
-
-
 p {
   margin: 0;
 }
 
+ul, ol {
+  list-style: none;
+}
+
 
 /* =========================================================
-   02. DESIGN VARIABLES
+   02. DESIGN VARIABLES. Owner: Group A (Foundations) 
 ========================================================= */
 
 :root {
@@ -94,25 +88,46 @@ p {
      LIGHT MODE:COLORS
   ------------------------------------------------------- */
 
-  --color-primary: #0079ff;
-  --color-primary-dark: #164baf;
-  --color-primary-light: #60abff;
+  /* Global */
+   --color-bg-main: #F6F8FF;
+   --color-bg-surface: #FFFFFF;
 
-  --color-background: #f6f8ff;
-  --color-background-light: #f2f7ff;
+   --color-primary: #0079FF; /* main buttons/search icon/focus states/profile blue text */
+   --color-primary-light: #60ABFF; /* buttons hover */
 
-  --color-surface: #ffffff;
+   /* header */
+   --color-logo: #000000;
+   --color-toggle: #4B6A9B;
+   --color-toggle-active: #2B3442; /* hover/focus */
 
-  --color-text: #2b3442;
-  --color-text-dark: #0f2a44;
-  --color-text-secondary: #4b6a9b;
-  --color-text-muted: #90a4d4;
+   /* search */
+   --color-text-search: #2B3442;
+   --color-text-search-placeholder: #4B6A9B;
+   --color-text-button: #FFFFFF;
+   --color-text-search-error: #F74646;
 
-  --color-black: #212121;
-  --color-white: #ffffff;
+   /* Planet profile */
+   --color-text-dark: #2B3442;
+   --color-text-planet-type: #0079FF;
+   --color-text-planet-para: #4B6A9B;
+   --color-text-stats-light: #4B6A9B;
+   --color-text-planet-error: #697C9A;
+   --color-icon: #141D2F;
 
-  --color-border: #d1e3ff;
+   /* Planetary facts/Table */
+   --color-text-facts-header: #164BAF;
+   --color-text-facts-para: #0F2A44;
+   --color-text-table-caption: #0F2A44;
+   --color-text-table-header: #FFFFFF;
+   --color-text-table-body: #212121;
 
+   --color-table-border: #FFFFFF;
+   --color-bg-cell: #F2F7FF;
+   --color-bg-row-header: #D1E3FF;
+   --color-bg-col-header: #164BAF;
+
+   /* Footer */
+   --color-text-footer: #4B6A9B;
 
 
   /* -------------------------------------------------------
@@ -205,98 +220,88 @@ p {
 }
 
 
-
 /* =========================================================
    DARK MODE:COLORS
 ========================================================= */
+   
+[data-theme="dark"] {
+   --color-bg-main: #141D2F;
+   --color-bg-surface: #1E2A47;
 
-:root {
+   /* header */
+   --color-logo: #FFFFFF;
+   --color-toggle: #90A4D4;
+   --color-toggle-active: #FFFFFF;
 
-    /* ---------------------------------
-       Colors
-    --------------------------------- */
+   
+   /* search */
+   --color-text-search: #FFFFFF;
+   --color-text-search-placeholder: rgba(255, 255, 255, 0.7);
 
-    --color-bg: #141D2F;
+   /* Planet profile */
+   --color-text-dark: #FFFFFF;
+   --color-text-planet-type: #60ABFF;
+   --color-text-stats-light: #FEFEFE;
+   --color-text-planet-error: #90A4D4;
+   --color-icon: #FFFFFF;
 
-    --color-surface: #1E2A47;
+   /* Planetary facts/Table */
+   --color-text-facts-header: #F0F1F2;
+   --color-text-facts-para: #90A4D4;
+   --color-text-table-caption: #D1E3FF;
+   --color-text-table-header: #D1E3FF;
 
-    --color-surface-dark: #101A30;
+   --color-bg-row-header: #90A4D4;
+   --color-bg-col-header: #141D2F;
 
-    --color-primary: #0079FF;
-
-    --color-primary-dark: #164BAF;
-
-    --color-primary-light: #60ABFF;
-
-    --color-text: #FFFFFF;
-
-    --color-text-primary: #2B3442;
-
-    --color-text-secondary: #4B6A9B;
-
-    --color-text-muted: #90A4D4;
-
-    --color-text-dark: #0F2A44;
-
-    --color-black: #212121;
-
-    --color-white: #FFFFFF;
-
-    --color-light-blue: #D1E3FF;
-
-    --color-light-bg: #F2F7FF;
-
-    
-    /* ---------------------------------
-       Shadows
-    --------------------------------- */
-
-    --shadow-card: 0 16px 30px -10px rgba(70, 96, 187, 0.2);
-
-    /* ---------------------------------
-       Borders
-    --------------------------------- */
-
-    --border-light: 2px solid #FFFFFF;
-
-    --border-dark: 1px solid rgba(255, 255, 255, 0.15);
-
+   /* Footer */
+   --color-text-footer: #D1E3FF;
 }
 
 
 
-
 /* =========================================================
-   01. HEADER SECTION
+   01. HEADER SECTION. Owner: Group B (Header)
 ========================================================= */
 
 
 
 /* =========================================================
-   02. SEARCH BOX SECTION
+   02. SEARCH BOX SECTION. Owner: Group C (Search bar) 
 ========================================================= */
 
 
 
 /* =========================================================
-   03. PLANET CARD SECTION
+   03. PLANET CARD SECTION. Owner: Group D (Planet profile) 
 ========================================================= */
 
 
 
 /* =========================================================
-   04. PLANET INFORMATION SECTION
+   04. PLANETARY FACTS / TABLE SECTION. Owner: Group E (Table)
 ========================================================= */
 
 
 
 /* =========================================================
-   05. TABLE SECTION
+   05. FOOTER SECTION. Owner: Group F (Footer)
 ========================================================= */
 
 
 
 /* =========================================================
-   06. FOOTER SECTION
+   06. RESPONSIVE DESIGN (PLANET CARD). Owner: Group D (Planet profile) 
 ========================================================= */
 
+
+
+/* =========================================================
+   07. RESPONSIVE DESIGN (TABLE). Owner: Group E (Table)
+========================================================= */
+
+
+
+/* =========================================================
+   08. RESPONSIVE DESIGN (FOOTER). Owner: Group F (Footer)
+========================================================= */
