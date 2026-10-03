@@ -1,0 +1,146 @@
+body {
+    font-family: var(--font-sans);
+    background: var(--color-bg-main);
+    color: var(--color-text-facts-para);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+/* =========================================================
+   02. DESIGN VARIABLES 
+========================================================= */
+
+:root {
+
+    /* Global */
+   --color-bg-main: #F6F8FF;
+   --color-bg-surface: #FFFFFF;
+
+   --color-primary: #0079FF; /* main buttons/search icon/focus states */
+   --color-primary-light: #60ABFF; /* buttons hover */
+
+    /* header */
+   --color-logo: #000000;
+   --color-toggle: #4B6A9B;
+   --color-toggle-active: #2B3442; /* hover/focus */
+
+    /* search */
+   --color-text-search: #2B3442;
+   --color-text-search-placeholder: #4B6A9B;
+   --color-text-button: #FFFFFF;
+   --color-text-search-error: #F74646;
+
+    /* Planet profile */
+   --color-text-planet-dark: #2B3442;
+   --color-text-planet-type: #0079FF;
+   --color-text-planet-para: #4B6A9B;
+   --color-text-stats-light: #4B6A9B;
+   --color-text-planet-error: #697C9A;
+   --color-icon: #141D2F;
+
+    /* Planetary facts/Table */
+   --color-text-facts-header: #164BAF;
+   --color-text-facts-para: #0F2A44;
+   --color-text-table-caption: #0F2A44;
+   --color-text-table-header: #FFFFFF;
+   --color-text-table-body: #212121;
+
+    --color-table-border: #FFFFFF;
+   --color-bg-cell: #F2F7FF;
+   --color-bg-row-header: #D1E3FF;
+   --color-bg-col-header: #164BAF;
+
+    /* Footer */
+   --color-text-footer: #4B6A9B;
+
+   
+    /* -------------------------------------------------------
+        TYPOGRAPHY
+    ------------------------------------------------------- */
+
+    --font-mono: "Space Mono", monospace;
+    --font-sans: "Inter", sans-serif;
+}
+
+
+/* =========================================================
+   DARK MODE:COLORS
+========================================================= */
+
+[data-theme="dark"] {
+   --color-bg-main: #141D2F;
+   --color-bg-surface: #1E2A47;
+
+   /* header */
+   --color-logo: #FFFFFF;
+   --color-toggle: #90A4D4;
+   --color-toggle-active: #FFFFFF;
+
+
+   /* search */
+   --color-text-search: #FFFFFF;
+   --color-text-search-placeholder: rgba(255, 255, 255, 0.7);
+
+   /* Planet profile */
+   --color-text-planet-dark: #FFFFFF;
+   --color-text-planet-type: #60ABFF;
+   --color-text-stats-light: #FEFEFE;
+   --color-text-planet-error: #90A4D4;
+   --color-icon: #FFFFFF;
+
+   /* Planetary facts/Table */
+   --color-text-facts-header: #F0F1F2;
+   --color-text-facts-para: #90A4D4;
+   --color-text-table-caption: #D1E3FF;
+   --color-text-table-header: #D1E3FF;
+
+   --color-bg-row-header: #90A4D4;
+   --color-bg-col-header: #141D2F;
+
+   /* Footer */
+   --color-text-footer: #D1E3FF;
+}
+
+
+
+/* =========================================================
+   01. HEADER SECTION
+========================================================= */
+
+
+/* =========================================================
+   02. SEARCH BOX SECTION 
+========================================================= */
+
+
+/* =========================================================
+   03. PLANET PROFILE SECTION 
+========================================================= */
+
+
+/* =========================================================
+   04. TABLE SECTION
+========================================================= */
+
+
+/* =========================================================
+   05. FOOTER SECTION
+========================================================= */
+
+
+/* =========================================================
+   06. RESPONSIVE DESIGN: PLANET PROFILE SECTION 
+========================================================= */
+
+
+/* =========================================================
+   07. RESPONSIVE DESIGN: TABLE SECTION
+========================================================= */
+
+
+/* =========================================================
+   08. RESPONSIVE DESIGN: FOOTER SECTION
+========================================================= */
