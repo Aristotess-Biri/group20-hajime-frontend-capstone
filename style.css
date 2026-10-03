@@ -19,11 +19,11 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   font-size: var(--font-size-md);
   line-height: var(--line-height-normal);
-  background: var(--color-background);
-  color: var(--color-text);
+  background: var(--color-bg-main);
+  color: var(--color-text-facts-para);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -134,8 +134,8 @@ ul, ol {
      TYPOGRAPHY
   ------------------------------------------------------- */
 
-  --font-body: "Space Mono", monospace;
-  --font-heading: "Inter", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Inter", sans-serif;
 
   --font-size-xs: 0.8125rem;
   --font-size-sm: 0.9375rem;
