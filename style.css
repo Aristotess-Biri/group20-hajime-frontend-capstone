@@ -107,7 +107,7 @@ ul, ol {
    --color-text-search-error: #F74646;
 
    /* Planet profile */
-   --color-text-dark: #2B3442;
+   --color-text-planet-dark: #2B3442;
    --color-text-planet-type: #0079FF;
    --color-text-planet-para: #4B6A9B;
    --color-text-stats-light: #4B6A9B;
@@ -239,7 +239,7 @@ ul, ol {
    --color-text-search-placeholder: rgba(255, 255, 255, 0.7);
 
    /* Planet profile */
-   --color-text-dark: #FFFFFF;
+   --color-text-planet-dark: #FFFFFF;
    --color-text-planet-type: #60ABFF;
    --color-text-stats-light: #FEFEFE;
    --color-text-planet-error: #90A4D4;
