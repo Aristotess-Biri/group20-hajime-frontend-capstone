@@ -1,0 +1,266 @@
+/* =========================================================
+   BASE.CSS — Owner: Group A
+   Contains: CSS reset + all design variables (light + dark)
+   Do not add section-specific styles here.
+========================================================= */
+
+
+/* =========================================================
+   01. CSS RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  background: var(--color-bg-main);
+  color: var(--color-text-facts-para);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+img,
+picture,
+svg,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+
+button,
+input {
+  font: inherit;
+}
+
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+
+input {
+  border: none;
+  outline: none;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+p {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+/* =========================================================
+   02. DESIGN VARIABLES 
+========================================================= */
+
+:root {
+
+  /* -------------------------------------------------------
+     LIGHT MODE:COLORS
+  ------------------------------------------------------- */
+
+  /* Global */
+   --color-bg-main: #F6F8FF;
+   --color-bg-surface: #FFFFFF;
+
+   --color-primary: #0079FF; /* main buttons/search icon/focus states */
+   --color-primary-light: #60ABFF; /* buttons hover */
+
+   /* header */
+   --color-logo: #000000;
+   --color-toggle: #4B6A9B;
+   --color-toggle-active: #2B3442; /* hover/focus */
+
+   /* search */
+   --color-text-search: #2B3442;
+   --color-text-search-placeholder: #4B6A9B;
+   --color-text-button: #FFFFFF;
+   --color-text-search-error: #F74646;
+
+   /* Planet profile */
+   --color-text-planet-dark: #2B3442;
+   --color-text-planet-type: #0079FF;
+   --color-text-planet-para: #4B6A9B;
+   --color-text-stats-light: #4B6A9B;
+   --color-text-planet-error: #697C9A;
+   --color-icon: #141D2F;
+
+   /* Planetary facts/Table */
+   --color-text-facts-header: #164BAF;
+   --color-text-facts-para: #0F2A44;
+   --color-text-table-caption: #0F2A44;
+   --color-text-table-header: #FFFFFF;
+   --color-text-table-body: #212121;
+
+   --color-table-border: #FFFFFF;
+   --color-bg-cell: #F2F7FF;
+   --color-bg-row-header: #D1E3FF;
+   --color-bg-col-header: #164BAF;
+
+   /* Footer */
+   --color-text-footer: #4B6A9B;
+
+
+  /* -------------------------------------------------------
+     TYPOGRAPHY
+  ------------------------------------------------------- */
+
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+
+  --font-size-xs: 0.8125rem;
+  --font-size-sm: 0.9375rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.375rem;
+  --font-size-3xl: 1.625rem;
+  --font-size-4xl: 2rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-wide: 0.15625rem;
+
+
+  /* -------------------------------------------------------
+     SPACING
+  ------------------------------------------------------- */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 2.5rem;
+  --space-9: 3rem;
+  --space-10: 3.5rem;
+  --space-11: 4rem;
+  --space-12: 5rem;
+  --space-13: 8.125rem;
+
+
+  /* -------------------------------------------------------
+     LAYOUT
+  ------------------------------------------------------- */
+
+  --container-width: 45.625rem;
+
+  --header-height: 3.25rem;
+
+  --search-height: 4.3125rem;
+
+  --profile-image-size: 4rem;
+
+  --stats-height: 4rem;
+
+
+  /* -------------------------------------------------------
+     BORDER RADIUS
+  ------------------------------------------------------- */
+
+  --radius-sm: 0.625rem;
+  --radius-md: 0.9375rem;
+  --radius-lg: 1rem;
+  --radius-full: 62.4375rem;
+
+
+  /* -------------------------------------------------------
+     SHADOW
+  ------------------------------------------------------- */
+
+  --shadow-card:
+    0 16px 30px -10px rgba(70, 96, 187, 0.20);
+
+
+  /* -------------------------------------------------------
+     TRANSITIONS
+  ------------------------------------------------------- */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+}
+
+
+/* =========================================================
+   DARK MODE:COLORS
+========================================================= */
+   
+[data-theme="dark"] {
+   --color-bg-main: #141D2F;
+   --color-bg-surface: #1E2A47;
+
+   /* header */
+   --color-logo: #FFFFFF;
+   --color-toggle: #90A4D4;
+   --color-toggle-active: #FFFFFF;
+
+   
+   /* search */
+   --color-text-search: #FFFFFF;
+   --color-text-search-placeholder: rgba(255, 255, 255, 0.7);
+
+   /* Planet profile */
+   --color-text-planet-dark: #FFFFFF;
+   --color-text-planet-type: #60ABFF;
+   --color-text-stats-light: #FEFEFE;
+   --color-text-planet-error: #90A4D4;
+   --color-icon: #FFFFFF;
+
+   /* Planetary facts/Table */
+   --color-text-facts-header: #F0F1F2;
+   --color-text-facts-para: #90A4D4;
+   --color-text-table-caption: #D1E3FF;
+   --color-text-table-header: #D1E3FF;
+
+   --color-bg-row-header: #90A4D4;
+   --color-bg-col-header: #141D2F;
+
+   /* Footer */
+   --color-text-footer: #D1E3FF;
+}
