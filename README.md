@@ -5,15 +5,17 @@ Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
 <https://group20-hajime-frontend.netlify.app/>
 
 ## Project Summary
-- A brief summary of the project
+A responsive web application recreating the Capstone Figma design, built with semantic HTML, CSS, and Vanilla JavaScript. 
+
+The app fetches planet data from a JSON API and lets users search for a planet to view its stats, alongside a static table of facts about our solar system. The entire interface supports both light and dark modes, with full hover, focus, and error states, and adapts to mobile, tablet, and desktop screens.
 
 ## Meet the Team
 ### Team Member Info
 
 | **Name** | **GitHub profile** |
 | --- | --- |
-| Ufuophu-Biri Aristotess (team lead) | <https://github.com/Aristotess-Biri> |
-| Emelife Henry Chibuike (assistant team lead) | <https://github.com/21sezha> |
+| Ufuophu-Biri Aristotess (*team lead*) | <https://github.com/Aristotess-Biri> |
+| Emelife Henry Chibuike (*assistant team lead*) | <https://github.com/21sezha> |
 | Olatunji David Seun | <https://github.com/Seun-David2002> |
 | Onyasi Wilmot Ibebi | https://github.com/Wilmotgit |
 | Raji Nawal | <https://github.com/Nawal734> |
