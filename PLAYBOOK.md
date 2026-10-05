@@ -16,7 +16,7 @@ Recreate the Capstone Figma design as a responsive web page that works in **ligh
 |---|---|
 | Figma design | https://www.figma.com/design/IhNMADS0jxaEeafBRK9KAj/Hajime-cohort?node-id=98381-1371&t=w6pVVY0IaIGOOpQ5-1 |
 | Planet data (JSON) | https://anurella.github.io/json/planet.json |
-| Live site | Added after the first deploy |
+| Live site | https://group20-hajime-frontend.netlify.app/ |
 | Group chat | https://chat.whatsapp.com/IqfWKJfLNYH5L7Doz752DJ |
 | GitHub Project board | https://github.com/Aristotess-Biri/group20-hajime-planetary-data/projects |
 | Meeting link (Google Meet) | https://meet.google.com/krk-rvos-hwk |
@@ -26,7 +26,7 @@ Recreate the Capstone Figma design as a responsive web page that works in **ligh
 | Squad | Members | What they own |
 |---|---|---|
 | Team lead | Ufuophu-Biri Aristotess | Coordination, unblocking people, checking who's active, README |
-| Assistant lead | Trevor-Henry Emelife | PR review triage, covers for the lead, README |
+| Assistant lead | Emelife Henry Chibuike | PR review triage, covers for the lead, README |
 | Foundation | Group A | Page skeleton, design tokens (light + dark), base CSS, Netlify/Vercel deploy |
 | Header | Group B | Logo, header layout, theme toggle button, `theme.js` |
 | Search | Group C | Search bar markup and styling, search logic, hover/focus/error states |
@@ -101,21 +101,29 @@ The **PR title uses the same format**. GitHub can't pre-fill titles, so you must
 
 ## 6. Files and who edits what
 
-## 6. Files and who edits what
-
 ```
-index.html
-style.css
-script.js
+css/
+  base.css          (Foundation only)
+  header.css
+  search.css
+  planet-profile.css
+  table.css
+  footer.css
+js/
+  fetch.js            (shared fetch, Planet profile squad owns)
+  theme.js            (Header squad)
+  planet-profile.js   (Planet profile squad)
+  search.js           (Search squad)
 assets/   (logo and icons exported from Figma)
 README.md
 PLAYBOOK.md
 ```
 
-- style.css and script.js are divided into labelled sections, each with an owner.
-- Edit ONLY inside your own section's banner. Never touch another squad's section.
-- The token section at the top of style.css and the shell of index.html belong to Foundation only. Need a change there? Message Foundation.
-- Asset file names: lowercase, hyphens, no spaces (`theme-toggle-sun.svg`, not `Sun Icon.SVG`). The live server is case-sensitive and your laptop isn't.
+- Each squad edits ONLY its own CSS/JS file and its own <section> in index.html.
+- base.css and the shared structure of index.html belong to Foundation only.
+  Need a change there? Message the lead or assistant lead.
+- Asset file names: lowercase, hyphens, no spaces (theme-toggle-sun.svg, not
+  Sun Icon.SVG). The live server is case-sensitive and your laptop isn't.
 
 ## 7. HTML rules
 
@@ -145,7 +153,7 @@ Format: `.block__element--modifier`. Lowercase, hyphens inside a name.
 ### Tokens: no hex codes in section files
 All colours, spacing, and font sizes come from tokens. Write `var(--color-surface)`, not `#1a1a2e`.
 
-Token names describe **purpose**, not colour: `--color-bg`, `--color-surface`, `--color-text`, `--color-text-muted`, `--color-border`, `--color-accent`. Spacing and type tokens follow the same idea. Foundation publishes the final list in `tokens.css`. If you need a token that doesn't exist, ask Foundation. Don't invent your own.
+Token names describe **purpose**, not colour: `--color-bg-main`, `--color-bg-surface`, `--color-text`, `--color-text-dark`, `--color-border`. Spacing and type tokens follow the same idea. Foundation publishes the final list in `base.css`. If you need a token that doesn't exist, ask Foundation. Don't invent your own.
 
 ### Light and dark mode
 Light values live in `:root`. Dark values live in `[data-theme="dark"]`. If you only use tokens, dark mode works automatically.
