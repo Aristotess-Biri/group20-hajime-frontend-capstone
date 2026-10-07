@@ -1,13 +1,16 @@
 # group20-hajime-capstone
 Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
 
-## See us on the web
+
+## Live Demo
 <https://group20-hajime-frontend.netlify.app/>
+
 
 ## Project Summary
 A responsive web application recreating the Capstone Figma design, built with semantic HTML, CSS, and Vanilla JavaScript. 
 
 The app fetches planet data from a JSON API and lets users search for a planet to view its stats, alongside a static table of facts about our solar system. The entire interface supports both light and dark modes, with full hover, focus, and error states, and adapts to mobile, tablet, and desktop screens.
+
 
 ## Meet the Team
 ### Team Member Info
@@ -17,7 +20,7 @@ The app fetches planet data from a JSON API and lets users search for a planet t
 | Ufuophu-Biri Aristotess (*team lead*) | <https://github.com/Aristotess-Biri> |
 | Emelife Henry Chibuike (*assistant team lead*) | <https://github.com/21sezha> |
 | Olatunji David Seun | <https://github.com/Seun-David2002> |
-| Onyasi Wilmot Ibebi | https://github.com/Wilmotgit |
+| Onyasi Wilmot Ibebi | <https://github.com/Wilmotgit> |
 | Raji Nawal | <https://github.com/Nawal734> |
 | Ogundein Priscilla | <https://github.com/priscilla-lite9> |
 | Adedoyin Daniel | <https://github.com/Oyinade24> |
@@ -25,7 +28,8 @@ The app fetches planet data from a JSON API and lets users search for a planet t
 | Owoyemi Mubeen Abdulgafar | <https://github.com/Algiffary04> |
 | Osarinmwian Brownson | <https://github.com/osarinmwianbrownson-lab> |
 
-### What did we do?
+
+### Work Breakdown
 
 | **Section** | **Built by** | **Members** |
 |---|---| --- |
@@ -38,25 +42,38 @@ The app fetches planet data from a JSON API and lets users search for a planet t
 | Deployment (Netlify) | Team leads | Ufuophu-Biri Aristotess, Emelife Henry Chibuike |
 | Coordination, README, PR review | Team leads | Ufuophu-Biri Aristotess, Emelife Henry Chibuike |
 
-## Want to run our project?
-The instructions on how to run the project locally:
-1. Clone the repo.
-In your terminal, enter:
 
-```
+## Want to run our project?
+Follow these steps to get the project running on your local machine:
+
+1. **Clone the repo**.
+
+    In your terminal, run the following command:
+
+```bash
 git clone git@github.com:Aristotess-Biri/group20-hajime-frontend-capstone.git
 ```
 
-2. Open the folder in VS Code.
-To locate the folder, enter:
-```
+2. **Open the folder in VS Code**.
+
+    Change directories into the folder:
+
+```bash
 cd group20-hajime-frontend-capstone
 ```
 
-Then:
-```
+Then open it directly in VS Code:
+
+```bash
 code .
 ```
 
-3. View this project on your browser. 
-Right-click index.html and choose Open with Live Server.
+3. **View the project in your browser**.
+
+    Install the **Live Server** extension in VS Code, if you don't have it already.
+
+    Right-click index.html and choose **Open with Live Server**.
+
+
+> [!IMPORTANT]
+> Opening `index.html` directly (double-clicking it) won't work, the planet data fetch needs a local server to run.
