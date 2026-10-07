@@ -29,22 +29,34 @@ The app fetches planet data from a JSON API and lets users search for a planet t
 
 | **Section** | **Built by** | **Members** |
 |---|---| --- |
-| Foundation (skeleton, reset, tokens) | Group A | Olatunji David Seun, Onyasi Wilmot Ibebi |
-| Header | Group B |  Raji Nawal |
-| Search | Group C |  Ogundein Priscilla, Adedoyin Daniel, Osarinmwian Brownson (*support*) |
-| Planet profile | Group D |  Olatunji David Seun, Emmanuel Ushahemba Bur, Onyasi Wilmot Ibebi (*support*) |
-| Table | Group E |  Owoyemi Mubeen Abdulgafar |
-| Footer | Group F |   Osarinmwian Brownson |
-| Deployment | Team leads | Ufuophu-Biri Aristotess, Emelife Henry Chibuike |
+| Foundation (skeleton, reset, CSS tokens) | Group A | Olatunji David Seun, Onyasi Wilmot Ibebi |
+| Header (HTML, CSS, JS) | Group B |  Raji Nawal |
+| Search (HTML, CSS, JS) | Group C |  Ogundein Priscilla, Adedoyin Daniel, Osarinmwian Brownson (*support*) |
+| Planet profile (HTML, CSS, JS) | Group D |  Olatunji David Seun, Emmanuel Ushahemba Bur, Onyasi Wilmot Ibebi (*support*) |
+| Table (HTML, CSS) | Group E |  Owoyemi Mubeen Abdulgafar |
+| Footer (HTML, CSS) | Group F |   Osarinmwian Brownson |
+| Deployment (Netlify) | Team leads | Ufuophu-Biri Aristotess, Emelife Henry Chibuike |
 | Coordination, README, PR review | Team leads | Ufuophu-Biri Aristotess, Emelife Henry Chibuike |
 
 ## Want to run our project?
 The instructions on how to run the project locally:
-1. Clone the repo:
+1. Clone the repo.
+In your terminal, enter:
 
 ```
-git clone ⚠️ PASTE REPO URL
-cd ⚠️ FOLDER NAME
+git clone git@github.com:Aristotess-Biri/group20-hajime-frontend-capstone.git
 ```
 
-2. ....
+2. Open the folder in VS Code.
+To locate the folder, enter:
+```
+cd group20-hajime-frontend-capstone
+```
+
+Then:
+```
+code .
+```
+
+3. View this project on your browser. 
+Right-click index.html and choose Open with Live Server.
