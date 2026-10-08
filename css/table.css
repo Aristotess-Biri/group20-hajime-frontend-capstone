@@ -112,6 +112,9 @@
    font-size: 0.875rem;
    margin-bottom: 12px; 
    }
+   .caption-source {
+      display: none;
+   }
    .table-wrapper {
       overflow:hidden;
    border-radius: 12px;
