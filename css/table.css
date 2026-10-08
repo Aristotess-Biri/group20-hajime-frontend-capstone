@@ -138,11 +138,6 @@
     display: none;
   }
 
-  /* Diameter column is wider than Name in the frame */
-  .planetary-table thead th:last-child {
-    width: 45%;
-  }
-
   /* group labels (Terrestrial, Jovian, Gas Giants...) */
   .planetary-table tbody th {
     font-size: 0.6875rem;
