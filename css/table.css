@@ -2,3 +2,154 @@
    TABLE.CSS — Owner: Group E
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
+/* ----Section wrapper----*/
+.planet-fact {
+   max-width: 730px;
+   margin: 40px auto;
+   padding: 24px;
+}
+/* ----Title---- */
+.planet-fact_title {
+   margin: 0 0 12px;
+   font-size:2.25rem;
+   font-weight: 700;
+   line-height: 1.2;
+   color: var(--color-text-facts-header);
+}
+/* ----Intro paragraph---- */
+.planet-fact_intro {
+   margin: 0 0 28px;
+   font-size: 1rem;
+   line-height: 1.6;
+   color: var(--color-text-facts-para);
+}
+/* ----Bold line above the table---- */
+.planet-fact_table-caption {
+   margin: 0 0 16px;
+   font-size: 1rem;
+   font-weight: 700;
+   color: var(--color-text-table-caption);
+}
+/* ----Table container---- */
+.table-wrapper {
+   overflow-x: auto;
+   border-radius: 16px;
+   border: 1px solid var(--color-table-border);
+   -webkit-overflow-scrolling: touch;
+}
+/* ----Table---- */
+.planetary-table {
+   border:none;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-text-table-body);
+}
+
+/* caption = bold line above the table */
+.planetary-table caption {
+  caption-side: top;
+  text-align: left;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-table-caption);
+}
+
+.planetary-table th,
+.planetary-table td {
+  padding: 14px 10px;
+  border: 1px solid var(--color-table-border);
+  vertical-align: middle;
+}
+
+/* ----Header row (light design: blue cells, white text)---- */
+.planetary-table thead th {
+  background-color: var(--color-bg-col-header);
+  color: var(--color-text-table-header);
+  font-weight: 600;
+  height: 56px;
+  white-space: nowrap;
+}
+
+/* ----Group cells (Terrestrial, Jovian, Gas Giants, Ice Giants, Dwarf)---- */
+.planetary-table tbody th {
+  background-color: var(--color-bg-row-header);
+  color: var(--color-text-table-body);
+  font-weight: 700;
+  min-width: 90px;
+}
+
+/* ----Data cells---- */
+.planetary-table tbody td {
+  background-color: var(--color-bg-cell);
+  height: 44px;
+}
+
+/* planet name column: stops "Mercury" / "Venus" wrapping */
+.planetary-table tbody td:first-of-type {
+  white-space: nowrap;
+  min-width: 90px;
+}
+
+
+/* ----Small screens---- */
+@media (max-width: 480px) {
+  .planet-fact { 
+   padding: 16px;
+   margin:24px auto; 
+}
+  .planet-fact_title { 
+   font-size: 1.5rem; 
+   }
+   .planet-fact_intro { 
+   font-size: 0.875rem;
+   line-height: 1.5;
+   margin-bottom: 20px; 
+   }
+   .planet-fact_table-caption { 
+   font-size: 0.875rem;
+   margin-bottom: 12px; 
+   }
+   .caption-source {
+      display: none;
+   }
+   .table-wrapper {
+      overflow:hidden;
+   border-radius: 12px;
+   }
+  .planetary-table { 
+   font-size: 0.75rem; 
+   }
+  .planetary-table th,
+  .planetary-table td { 
+   padding: 10px 6px; 
+   }
+   /* header row */
+  .planetary-table thead th {
+    height: 44px;
+    font-size: 0.75rem;
+  }
+
+  /* hide the Mass column (header + every body row) */
+  .planetary-table thead th:nth-last-child(2),
+  .planetary-table tbody td:nth-last-child(2) {
+    display: none;
+  }
+
+  /* group labels (Terrestrial, Jovian, Gas Giants...) */
+  .planetary-table tbody th {
+    font-size: 0.6875rem;
+    min-width: 0;
+  }
+
+  /* data rows */
+  .planetary-table tbody td {
+    height: 40px;
+  }
+
+  .planetary-table tbody td:first-of-type {
+    min-width: 0;
+  }
+}
