@@ -12,7 +12,7 @@ Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
 
 
 ## Live Demo
-[https://group20-hajime-frontend.netlify.app/](https://group20-hajime-frontend.netlify.app/{target=_blank})
+<a href="https://group20-hajime-frontend.netlify.app/" target="_blank">https://group20-hajime-frontend.netlify.app/</a>
 
 
 ## Project Summary
