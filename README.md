@@ -1,5 +1,14 @@
-# group20-hajime-capstone
+# group20-hajime-capstone | TS Academy
 Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
+
+## Table of Contents
+
+- [Live Demo](#live-demo)
+- [Project Summary](#project-summary)
+- [Meet the Team](#meet-the-team)
+    - [Team Member Info](#team-member-info)
+    - [Work Breakdown](#work-breakdown)
+- [Want to run our project?](#want-to-run-our-project)
 
 
 ## Live Demo
@@ -7,6 +16,8 @@ Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
 
 
 ## Project Summary
+<!-- Screenshot of page -->
+
 A responsive web application recreating the Capstone Figma design, built with semantic HTML, CSS, and Vanilla JavaScript. 
 
 The app fetches planet data from a JSON API and lets users search for a planet to view its stats, alongside a static table of facts about our solar system. The entire interface supports both light and dark modes, with full hover, focus, and error states, and adapts to mobile, tablet, and desktop screens.
