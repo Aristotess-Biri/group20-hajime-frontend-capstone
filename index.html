@@ -1,124 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-        <title>Planet</title>
-        <!-- To do: Favicon from Logo -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta name="description" content="Hajime - Frontend capstone project">
-        <meta name="author" content="Group 20">
+    <title>Planet</title>
+    <!-- To do: Favicon from Logo -->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/search.css">
-        <link rel="stylesheet" href="css/planet-profile.css">
-        <link rel="stylesheet" href="css/table.css">
-        <link rel="stylesheet" href="css/footer.css">
+    <meta name="description" content="Hajime - Frontend capstone project" />
+    <meta name="author" content="Group 20" />
 
-        <script defer src="js/fetch.js"></script>
-        <script defer src="js/theme.js"></script>
-        <script defer src="js/planet-profile.js"></script>
-        <script defer src="js/search.js"></script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/planet-profile.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <script defer src="js/fetch.js"></script>
+    <script defer src="js/theme.js"></script>
+    <script defer src="js/planet-profile.js"></script>
+    <script defer src="js/search.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header></header>
+
+    <main>
+      <section class="search">
+        <!-- search section -->
+      </section>
+
+      <section class="planet-profile">
+        <!-- planet information -->
+      </section>
+
+      <section class="planet-fact">
+        <!-- planet fact -->
+        <h2 class="planet-fact_title">Planetary Facts at a Glance</h2>
+        <p class="planet-fact_intro">
+          Below is a comparative table of major planets in our solar system. The
+          data highlights key physical properties used by astronomers and
+          researchers worldwide.
+        </p>
+        <p class="planet-fact_table-caption">
+          Data about the planets of our solar system
+          <span class="caption-source">(Planetary facts taken from NASA)</span>
+        </p>
+        <div class="table-wrapper">
+          <table class="planetary-table">
+            <thead>
+              <tr>
+                <th scope="col" colspan="2" class="corner"></th>
+                <th>Name</th>
+                <th scope="col">Mass (10 24kg)</th>
+                <th scope="col">Diameter (km)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" rowspan="4" colspan="2">Terrestrial Planets</th>
+                <td>Mercury</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <td>Venus</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <td>Earth</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <td>Mars</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="4">Jovian Planets</th>
+                <th scope="row" rowspan="2">Gas Giants</th>
+                <td>Jupiter</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <td>Saturn</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2">Ice Giants</th>
+                <td>Uranus</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <td>Neptune</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+              <tr>
+                <th scope="row" colspan="2">Dwarf Planets</th>
+                <td>Pluto</td>
+                <td>0.330</td>
+                <td>4,878</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__container">
+        <div>
+        <h2 class="site-footer_heading">About</h2>
+        <ul class="site-footer__list">
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="https://github.com/Aristotess-Biri">Aristotess</a>
+            </li>
+            <li class="site-footer__item"><a class="site-footer__link"
+              href="https://github.com/21sezha
+
+"
+              >Henry</a></li>
+            <li class="site-footer__item"><a class="site-footer__link"
+              href="https://github.com/Seun-David2002"
+              class="site-footer__link"
+              >David</a
+            ></li>
             
-        </header>
+            <li class="site-footer__item">
+                <a class="site-footer__link" href="https://github.com/Wilmotgit">Wilmot</a>
+            </li>
+            
+            <li class=".site-footer__item">
+                <a  class="site-footer__link" href="https://github.com/Nawal734">Nawal</a></li>
+            
+            <li class="site-footer__item"><a class="site-footer__link"
+              href="https://github.com/priscilla-lite9
 
-        <main>
-            <section class="search">
-                <!-- search section -->
-            </section>
-
-            <section class="planet-profile">
-                <!-- planet information -->
-            </section>
-
-            <section class="planet-fact">
-                <!-- planet fact -->
-                 <h2 class="planet-fact_title">Planetary Facts at a Glance</h2>
-                <p class="planet-fact_intro">
-                    Below is a comparative table of major planets in our solar system. 
-                    The data highlights key physical properties used by astronomers and researchers worldwide.
-                </p>
-                <p class="planet-fact_table-caption">Data about the planets of our solar system <span class="caption-source">(Planetary facts taken from NASA)</span></p>
-              <div class="table-wrapper"> 
-                <table class="planetary-table">
-                    <thead>
-                        <tr>
-                            <th scope="col" colspan="2" class="corner"></th>
-                            <th>Name</th>
-                            <th scope="col">Mass (10 24kg)</th>
-                            <th scope="col">Diameter (km)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" rowspan="4" colspan="2">Terrestrial Planets</th>
-                            <td>Mercury</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <td>Venus</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <td>Earth</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <td>Mars</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" rowspan="4">Jovian Planets</th>
-                            <th scope="row" rowspan="2">Gas Giants</th>
-                            <td>Jupiter</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <td>Saturn</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" rowspan="2">Ice Giants</th>
-                            <td>Uranus</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <td>Neptune</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="2">Dwarf Planets</th>
-                            <td>Pluto</td>
-                            <td>0.330</td>
-                            <td>4,878</td>
-                        </tr>
-                    </tbody>
-                </table>
-              </div>
-            </section>
-
-        </main>
-
-        <footer>
-
-        </footer>
-    </body>
+"
+              >Priscilla</a
+            ></li>
+            
+            <li class="site-footer__item">
+                <a class="site-footer__link" href="https://github.com/Oyinade24">Adedoyin</a>
+            </li>
+            
+            <li class="site-footer__item">
+                <a class="site-footer__link" href="https://github.com/Emmanuel-Ushahemba-Bur">Emmanuel</a>
+            </li>
+            
+            <li class="site-footer__item">
+                 <a  class="site-footer__link" href="https://github.com/Algiffary04">Owoyemi </a>
+            </li>
+           
+            <li class="site-footer__item">
+                <a class="site-footer__link" href="https://github.com/osarinmwianbrownson-lab">Brownson</a>
+            </li>
+            
+           
+          
+        </ul>
+      </div>
+      <div class="site-footer__note">
+        <p>&copy;2026 Design by Amaka N</p>
+        <p>Built by Group 20. All rights reserved</p>
+        <p>TSAcademy</p>
+      </div>
+    </div>
+    </footer>
+  </body>
 </html>
