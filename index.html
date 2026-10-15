@@ -6,6 +6,11 @@
        
         <title>Planet</title>
         <!-- To do: Favicon from Logo -->
+         <link rel="icon" type="image/png" href="favicon/favicon/favicon-96x96.png" sizes="96x96" />
+         <link rel="icon" type="image/svg+xml" href="favicon/favicon/favicon.svg" />
+         <link rel="shortcut icon" href="favicon/favicon/favicon.ico" />
+         <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon/apple-touch-icon.png" />
+         <link rel="manifest" href="favicon/favicon/site.webmanifest" />
 
         <meta name="description" content="Hajime - Frontend capstone project">
         <meta name="author" content="Group 20">
@@ -35,6 +40,13 @@
         <main>
             <section class="search">
                 <!-- search section -->
+                 <form class="search-form">
+                    <img class="search-img" src="favicon/favicon/favicon.svg" alt="search icon">
+                    <label for="search"></label>
+                    <input class="search-input" type="search" id="search" name="search" placeholder="Search planet name" minlength="3" maxlength="20">
+                    <button class="search-button" type="button">Search</button>
+                    <span class="error" id="error" role="alert"></span>
+                 </form>
             </section>
 
             <section class="planet-profile">
