@@ -27,7 +27,7 @@
 
 .site-footer__heading {
   font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-footer);
   text-align: left;
@@ -39,7 +39,7 @@
 .site-footer__list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap: var(--space-3) var(--space-6);
 }
@@ -58,6 +58,7 @@
 
 .site-footer__link {
   font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xs);
   color: var(--color-text-footer);
   text-decoration: underline;
   text-underline-offset: 0.2em;
