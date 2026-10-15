@@ -95,7 +95,7 @@
 
 
 /* ----Small screens---- */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .planet-fact { 
    padding: 16px;
    margin:24px auto; 
