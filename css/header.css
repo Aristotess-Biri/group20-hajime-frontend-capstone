@@ -2,3 +2,167 @@
    HEADER.CSS — Owner: Group B
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
+
+/* ---------- Theme tokens ---------- */
+:root,
+[data-theme="light"] {
+  --bg: #f3f6fd;
+  --surface: #ffffff;
+  --text: #0f1b3d;
+  --text-muted: #5b6685;
+  --border: #dbe2f3;
+  --accent: #0a6cf5;
+  --focus: #0a6cf5;
+}
+
+[data-theme="dark"] {
+  --bg: #0d1635;
+  --surface: #14204a;
+  --text: #f2f5ff;
+  --text-muted: #9aa7cc;
+  --border: #243260;
+  --accent: #4d94ff;
+  --focus: #7db3ff;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ---------- Header ---------- */
+.header {
+  width: 100%;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.logo__img {
+  display: block;
+  height: 40px;   /* change this to resize */
+  width: auto;
+}
+
+/* Light mode: show light logo, hide dark logo */
+.logo__img--dark {
+  display: none;
+}
+
+/* Dark mode: swap them */
+[data-theme="dark"] .logo__img--light {
+  display: none;
+}
+
+[data-theme="dark"] .logo__img--dark {
+  display: block;
+}
+
+.logo__text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Theme toggle ---------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle:active {
+  transform: scale(0.97);
+}
+
+/* Moon in light mode, sun in dark mode */
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--sun {
+  display: inline-block;
+}
+
+/* ---------- Keyboard focus ---------- */
+.logo:focus-visible,
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .header__inner {
+    padding: 16px;
+  }
+
+  .theme-toggle {
+    padding: 9px;
+  }
+
+  .theme-toggle__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
