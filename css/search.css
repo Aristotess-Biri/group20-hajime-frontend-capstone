@@ -2,3 +2,96 @@
    SEARCH.CSS — Owner: Group C
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
+.search-form{
+   font-family: var(--font-mono);
+   background-color: var(--color-text-button);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: var(--space-3);
+   max-width: var(--container-width);
+   height: var(--search-height);
+   margin: 0 auto ;
+   padding: var(--space-2) var(--space-3) var(--space-2) var(--space-6);
+   border-radius: var(--radius-lg);
+   box-shadow: var(--shadow-card);
+   overflow: hidden;
+}
+.search-img{
+   width: var(--space-6);
+   height: var(--space-6);
+}
+.search-input{
+   font-family: inherit;
+   font-size: var(--font-size-lg);
+   font-weight: var(--font-weight-regular);
+   color: var(--color-text-search-placeholder);
+   line-height: var(--line-height-normal);
+   flex: 1;
+   outline: none;
+   background-color: transparent
+   
+}
+
+.search-button{
+   font-family: inherit;
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-size-md);
+   color: var(--color-text-button);
+   background-color: var(--color-primary);
+   padding: var(--space-3) var(--space-6);  
+   border-radius: var(--radius-sm);
+   gap: 10px;
+   transition: var(--transition-normal), outline-c;
+   
+    &:hover{
+      background-color: var(--color-primary-light); 
+   }
+
+}
+
+.search-form:focus-within{
+   box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.search-button:focus-visible{            
+   outline: 2px solid var(--color-primary);
+   outline-offset: 3px;
+   }
+
+@media (prefers-color-scheme: dark){
+   .search-form{
+      background-color: var(--color-bg-surface);
+   }
+
+   .search{
+      color: var(--color-text-search);
+   }
+
+   .search::placeholder{
+      color: var(--color-text-search-placeholder);
+   }
+}
+
+.error{
+   color: var(--color-text-search-error);
+   font-weight: var(--font-weight-bold);
+   white-space: nowrap;
+}
+
+@media (max-width: 600px){
+   .search-form{
+      padding: 6px 6px 6px 14px;
+      gap: 8px;
+   }
+   .search{
+      font-size: var(--font-size-xs);
+   }
+   .search-button{
+       font-size: var(--font-size-xs);
+       padding: 12px 16px;
+      
+   }
+
+}
+
