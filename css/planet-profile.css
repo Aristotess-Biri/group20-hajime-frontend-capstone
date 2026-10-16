@@ -4,7 +4,10 @@
 ========================================================= */
 .planet-profile {
    font-family: var(--font-mono);
-   max-width: var(--container-width);
+}
+
+.planet-container {
+   margin: 48px auto;
 }
 
 .hidden {
