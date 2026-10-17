@@ -3,113 +3,149 @@
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
 
-.planet-card {
-  background-color: #ffffff;
-  width: 100%;
-  border-radius: 24px;
-  margin-left: 21%;
-  margin-top: 50px;
-  max-width: 850px;
-  padding: 40px;
-  box-shadow:0 10px rgba(0, 0, 0, 0.1) ;
-  box-sizing: border-box;
-  font-family: monospace, monospace;
-  
-  
-}
-#pp-card {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom:20px;
-}
-#pp-image {
-  display: flex;
-  max-width: 40vp;
-  max-height: 40vp;
-  margin-top: -195px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-#pp-info {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+/* style cards */
+.pp-state {
+   font-family: var(--font-mono);
+   background-color: var(--color-bg-surface);
+   padding: 3rem 3.3rem;
+   border-radius: var(--radius-lg);
+   box-shadow: var(--shadow-card);
 }
 
-h2 {
-  font-size: 1.25.em; 
-  font-weight: var(--font-weight-bold);      
+/* no results card */
+.pp-hidden {
+   display: none;
+}
+
+.hidden-heading {
+   color: var(--color-text-planet-dark);
+   font-size: var(--font-size-2xl);
+   text-align: center;
+}
+
+.hidden-body {
+   color: var(--color-text-planet-error);
+   text-align: center;
+   margin-top: var(--space-4);
+}
+
+/* found card */
+
+/* grid */
+.pp-grid {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: var(--space-7);
+   justify-items: start;
+}
+
+.grid-side {
+   grid-row: 1 / 3;
+}
+
+.grid-top,
+.grid-bottom {
+   min-width: 0;
+   overflow-wrap: anywhere;
+}
+
+/* styling */
+#pp-image {
+   width: 117px;
+   height: 117px;
+   object-fit: cover;
+   border-radius: var(--radius-full);
+}
+
+#pp-name {
+   font-size: var(--font-size-3xl);
+   color: var(--color-text-planet-dark);
+   line-height: 120%;
 }
 
 #pp-type {
-  color: #3b82f6;
-  font-weight: var(--font-weight-normal); 
-  text-transform: capitalize;     
-  
-}  
+   font-size: var(--font-size-md);
+   color: var(--color-text-planet-type);
+   margin-bottom: var(--space-6);
+}
 
 #pp-desc {
-  font-size: var(--font-size-md);  
-  padding: 10px;
-  
+   font-size: var(--font-size-sm);
+   color: var(--color-text-planet-para);
+   margin-bottom: var(--space-6);
 }
+
 .pp-stats {
-  background-color: #f0f4f9;
-  display: grid; 
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  justify-content: space-around; 
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0;
+   background-color: var(--color-bg-main);
+   border-radius: var(--radius-sm);
+   padding: var(--space-4) var(--space-7);
+   margin-bottom: var(--space-6);
+   display: flex;
+   gap: var(--space-4);
+   justify-content: space-between;
 }
+
 .pp-stat {
-  display: flex; 
-  flex-direction: column;  
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   align-items: start;
 }
 
 .pp-label {
-  color: var(--color-text-facts-para);
-  text-transform: capitalize;
+   font-size: var(--font-size-xs);
+   color: var(--color-text-stats-light);
 }
 
 .pp-value {
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-facts-para);
-}
-.pp-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+   font-size: var(--font-size-2xl);
+   font-weight: bold;
+   color: var(--color-text-planet-dark);
 }
 
-.pp-mini{
-  display: flex; 
-  align-items: center;
-  gap: 20px;
-  font-size: var(--font-size-md);
-  color: var(--color-text-facts-para);
+.pp-info {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: var(--space-4);
 }
-@media (max-width: 768px) {
-  .planet-card {
-    margin-left: 10%;
-    width:auto;
-    padding: 20px;
-  }
-  #pp-card {
-    flex-direction: column;
-    align-items: center;
-  }
-  #pp-image {
-    margin-top: -100px;
-    width: 150px;
-    height: 150px;
-  }
-  .pp-grid {
-    grid-template-columns: 1fr; 
-  }
 
-  
+.pp-mini {
+   display: flex;
+   gap: var(--space-4);
+   align-items: center;
+}
+
+.pp-mini path {
+   fill: var(--color-icon);
+}
+
+.pp-mini span {
+   color: var(--color-text-stats-light);
+   font-size: var(--font-size-sm);
+}
+
+/* responsive design */
+@media screen and (max-width: 767px) {
+   /* grid */
+   .grid-side {
+      grid-row: 1;
+   }
+   .grid-bottom {
+      grid-column: 1 / -1;
+      margin-top: var(--space-6);
+   }
+   /* styling */
+   #pp-type {
+         margin-bottom: 0;
+   }
+   #pp-image {
+      width: 77px;
+      height: 77px;
+   }
+   .pp-stats {
+      flex-direction: column;
+   }
+   .pp-info {
+   grid-template-columns: 1fr;
+   }
 }
