@@ -36,7 +36,6 @@
    display: grid;
    grid-template-columns: auto 1fr;
    column-gap: var(--space-7);
-   justify-items: start;
 }
 
 .grid-side {
@@ -135,6 +134,9 @@
       margin-top: var(--space-6);
    }
    /* styling */
+   .pp-state {
+      padding: 2rem 1.5rem;
+   }
    #pp-type {
          margin-bottom: 0;
    }
@@ -144,6 +146,7 @@
    }
    .pp-stats {
       flex-direction: column;
+      padding-inline: 1.25rem;
    }
    .pp-info {
    grid-template-columns: 1fr;
