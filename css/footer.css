@@ -55,7 +55,7 @@
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-xs);
   color: var(--color-text-footer);
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.2em;
   transition: color var(--transition-fast);
 }
@@ -63,6 +63,7 @@
 .site-footer__link:hover,
 .site-footer__link:focus-visible {
   color: var(--color-primary);
+  text-decoration: underline;
 }
 
 .site-footer__note {
