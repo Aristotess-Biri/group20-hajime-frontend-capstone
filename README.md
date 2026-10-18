@@ -91,7 +91,7 @@ These are the JavaScript behaviours behind the page.
 | **Function** | **What it does** | **Built by** |
 | --- | --- | --- |
 | Theme toggle | Switches light/dark mode and remembers the choice | [Raji Nawal][nawal] |
-| Fetch planet data | Loads the planet list from the JSON API | [Emmanuel Ushahemba Bur][bur] |
+| Fetch planet data | Loads the planet list from the API | [Emmanuel Ushahemba Bur][bur] |
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
 | Show a planet | Fills the planet card with the chosen planet's details | [Emmanuel Ushahemba Bur][bur] |
 
