@@ -33,7 +33,7 @@ A responsive web application that fetches planet data from an API and lets users
 The entire interface supports both light and dark modes, with full hover, focus, and error states, and adapts to mobile, tablet, and desktop screens.
 
 <div align="right">
-  <a href="#top">Back to top ↑</a>
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
 
 
@@ -46,7 +46,7 @@ The entire interface supports both light and dark modes, with full hover, focus,
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
 <div align="right">
-  <a href="#top">Back to top ↑</a>
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
 
 ## Meet the Team
@@ -106,7 +106,7 @@ These are the JavaScript behaviours behind the page.
 > Support roles were for guidance and advice, so they do not own code in that section.
 
 <div align="right">
-  <a href="#top">Back to top ↑</a>
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
 
 ## Want to run our project?
@@ -146,7 +146,7 @@ Follow these steps to get the project running on your local machine:
     > Alternatively, use the keyboard shortcut: <kbd>Alt</kbd> + <kbd>L</kbd> <kbd>Alt</kbd> + <kbd>O</kbd>.
 
 <div align="right">
-  <a href="#top">Back to top ↑</a>
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
 
 ## Project Structure
@@ -174,7 +174,7 @@ group20-hajime-frontend-capstone/
 ```
 
 <div align="right">
-  <a href="#top">Back to top ↑</a>
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
  
 ## How We Worked
@@ -182,7 +182,7 @@ group20-hajime-frontend-capstone/
 - Tasks tracked on a GitHub Project board
 
 <div align="right">
-  <a href="#top">Back to top ↑</a>
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
 
 ## Acknowledgments
@@ -191,7 +191,7 @@ group20-hajime-frontend-capstone/
 - Planet data: the [API](https://anurella.github.io/json/planet.json) provided for the project
 
 <div align="right">
-  <a href="#top">Back to top ↑</a>
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
 
 <!-- Profile links -->
