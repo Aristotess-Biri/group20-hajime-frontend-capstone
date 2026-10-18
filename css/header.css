@@ -3,44 +3,7 @@
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
 
-/* ---------- Theme tokens ---------- */
-:root,
-[data-theme="light"] {
-  --bg: #f3f6fd;
-  --surface: #ffffff;
-  --text: #0f1b3d;
-  --text-muted: #5b6685;
-  --border: #dbe2f3;
-  --accent: #0a6cf5;
-  --focus: #0a6cf5;
-}
 
-[data-theme="dark"] {
-  --bg: #0d1635;
-  --surface: #14204a;
-  --text: #f2f5ff;
-  --text-muted: #9aa7cc;
-  --border: #243260;
-  --accent: #4d94ff;
-  --focus: #7db3ff;
-}
-
-/* ---------- Base ---------- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-/* ---------- Header ---------- */
 .header {
   width: 100%;
   background-color: var(--bg);
@@ -49,8 +12,7 @@ body {
 }
 
 .header__inner {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 20px 24px;
   display: flex;
   align-items: center;
@@ -70,7 +32,7 @@ body {
 
 .logo__img {
   display: block;
-  height: 40px;   /* change this to resize */
+  height: 40px;   
   width: auto;
 }
 
@@ -95,37 +57,69 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* ---------- Theme toggle ---------- */
+
+/* ---------- Theme toggle: Light and Dark ---------- */
 .theme-toggle {
   display: inline-flex;
+  flex-direction: row-reverse;
   align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  font: inherit;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text);
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  justify-content: center;
+  gap: 8px; 
+
+  padding: 5px 0; 
+  font-family: inherit;
+  font-size: 16px; 
+  font-weight: 800;
+  letter-spacing: 0.15em; 
+  line-height: 1;
+
+  color: #4D6FA8;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.theme-toggle__label {
+  text-transform: uppercase;
 }
 
 .theme-toggle:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  color: #31558F;
+  background: transparent;
+  border-color: transparent;
 }
 
-.theme-toggle:active {
-  transform: scale(0.97);
+.theme-toggle:focus {
+  color: #2F3542;
+  background: transparent;
+  border: 2px solid #0080FF;
+  border-radius: 12px;
+  padding: 5px 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
-/* Moon in light mode, sun in dark mode */
+/* Moon in light mode */
+.theme-toggle__icon--moon {
+  display: inline-block;
+  width: 24px; /* CHANGED: 40px → 24px */
+  height: 24px; /* CHANGED: 40px → 24px */
+  flex-shrink: 0;
+}
+
+/* Sun hidden in light mode */
 .theme-toggle__icon--sun {
   display: none;
+  width: 24px; /* CHANGED: 40px → 24px */
+  height: 24px; /* CHANGED: 40px → 24px */
+  flex-shrink: 0;
 }
 
+/* Sun in dark mode */
 [data-theme="dark"] .theme-toggle__icon--moon {
   display: none;
 }
@@ -134,11 +128,51 @@ body {
   display: inline-block;
 }
 
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .header__inner {
+    padding: 16px;
+  }
+
+  .theme-toggle {
+    padding: 5px 0; /* CHANGED: keeps compact spacing */
+    gap: 6px;
+    font-size: 14px; /* ADDED */
+    letter-spacing: 0.12em;
+  }
+
+  .theme-toggle__icon--moon,
+  .theme-toggle__icon--sun {
+    width: 20px; /* ADDED */
+    height: 20px; /* ADDED */
+  }
+
+  /* Keep the label visible on mobile */
+  .theme-toggle__label {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: nowrap;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+
+
 /* ---------- Keyboard focus ---------- */
-.logo:focus-visible,
 .theme-toggle:focus-visible {
   outline: 2px solid var(--focus);
-  outline-offset: 3px;
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 /* ---------- Responsive ---------- */
