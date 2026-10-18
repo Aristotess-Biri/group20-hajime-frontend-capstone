@@ -15,7 +15,6 @@ async function fetchPlanets() {
 
         const planets = await response.json();
 
-        console.log("Planet data:", planets);
 
         return planets;
 
@@ -75,7 +74,6 @@ const profileFound = document.getElementById("pp-found");
 
 const profileNoResults = document.getElementById("pp-no-results");
 
-console.log(searchInput);
 
 async function setupSearch() {
    // Fetch the planetary data
@@ -94,7 +92,6 @@ async function setupSearch() {
     searchButton.addEventListener("click", function () {
       const searchText = searchInput.value.toLowerCase().trim();
 
-      console.log(searchText);
       if (searchText === "") {
         defaultPlanet(planets);
         return;
@@ -104,7 +101,6 @@ async function setupSearch() {
             return item.name.toLowerCase() === searchText;
       });
 
-      console.log("Search result:", planet);
       // Update the profile if a match exists
 
       if (planet) {
