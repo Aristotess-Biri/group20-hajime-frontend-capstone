@@ -142,8 +142,8 @@ Follow these steps to get the project running on your local machine:
 
     Right-click index.html and choose **Open with Live Server**.
 
-    > [!TIP]
-    > Alternatively, use the keyboard shortcut: <kbd>Alt</kbd> + <kbd>L</kbd> <kbd>Alt</kbd> + <kbd>O</kbd>.
+> [!TIP]
+> Alternatively, use the keyboard shortcut: <kbd>Alt</kbd> + <kbd>L</kbd> <kbd>Alt</kbd> + <kbd>O</kbd>.
 
 <div align="right">
   <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
