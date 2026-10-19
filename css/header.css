@@ -2,3 +2,170 @@
    HEADER.CSS — Owner: Group B
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
+
+
+.header {
+  width: 100%;
+  background-color: var(--bg);
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.header__inner {
+  width: 100%;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.logo__img {
+  display: block;
+  height: 40px;   
+  width: auto;
+}
+
+/* Light mode: show light logo, hide dark logo */
+.logo__img--dark {
+  display: none;
+}
+
+/* Dark mode: swap them */
+[data-theme="dark"] .logo__img--light {
+  display: none;
+}
+
+[data-theme="dark"] .logo__img--dark {
+  display: block;
+}
+
+.logo__text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+
+
+/* ---------- Theme toggle: Light and Dark ---------- */
+.theme-toggle {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+
+  padding: 5px 0; 
+  font-family: inherit;
+  font-size: 16px; 
+  font-weight: 800;
+  letter-spacing: 0.15em; 
+  line-height: 1;
+
+  color: #4D6FA8;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.theme-toggle__label {
+  text-transform: uppercase;
+}
+
+.theme-toggle:hover {
+  color: #31558F;
+  background: transparent;
+  border-color: transparent;
+}
+
+.theme-toggle:focus-visible {
+  color: #2F3542;
+  background: transparent;
+  border: 2px solid #0080FF;
+  border-radius: 12px;
+  padding: 5px 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Moon in light mode */
+.theme-toggle__icon--moon {
+  display: inline-block;
+  width: 24px; /* CHANGED: 40px → 24px */
+  height: 24px; /* CHANGED: 40px → 24px */
+  flex-shrink: 0;
+}
+
+/* Sun hidden in light mode */
+.theme-toggle__icon--sun {
+  display: none;
+  width: 24px; /* CHANGED: 40px → 24px */
+  height: 24px; /* CHANGED: 40px → 24px */
+  flex-shrink: 0;
+}
+
+/* Sun in dark mode */
+[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--sun {
+  display: inline-block;
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .header__inner {
+    padding: 16px;
+  }
+
+  .theme-toggle {
+    padding: 5px 0; /* CHANGED: keeps compact spacing */
+    gap: 6px;
+    font-size: 14px; /* ADDED */
+    letter-spacing: 0.12em;
+  }
+
+  .theme-toggle__icon--moon,
+  .theme-toggle__icon--sun {
+    width: 20px; /* ADDED */
+    height: 20px; /* ADDED */
+  }
+
+  /* Keep the label visible on mobile */
+  .theme-toggle__label {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: nowrap;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+
+

@@ -2,3 +2,83 @@
    FOOTER.CSS — Owner: Group F
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
+.site-footer {
+  margin-top: var(--space-1);
+  padding-block: var(--space-2);
+  border-top: 1px solid var(--color-bg-surface);
+}
+
+.site-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-5);
+  text-align: center;
+}
+
+.site-footer__heading {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-footer);
+  text-align: left;
+  margin-bottom: var(--space-6);
+  
+  
+}
+
+.site-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--space-3) var(--space-6);
+}
+
+.site-footer__item {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-footer);
+}
+
+.site-footer__name {
+  font-weight: var(--font-weight-medium);
+}
+
+.site-footer__link {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-footer);
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+  transition: color var(--transition-fast);
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus-visible {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.site-footer__note {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-footer);
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* ---------------------------------------------------------
+   MOBILE (single breakpoint, from the playbook)
+--------------------------------------------------------- */
+@media (max-width: 767px) {
+  .site-footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-6);
+  }
+}

@@ -2,3 +2,153 @@
    PLANET-PROFILE.CSS — Owner: Group D
    Use tokens from base.css only (no hex codes here).
 ========================================================= */
+
+/* style cards */
+.pp-state {
+   font-family: var(--font-mono);
+   background-color: var(--color-bg-surface);
+   padding: 3rem 3.3rem;
+   border-radius: var(--radius-lg);
+   box-shadow: var(--shadow-card);
+}
+
+/* no results card */
+.pp-hidden {
+   display: none;
+}
+
+.hidden-heading {
+   color: var(--color-text-planet-dark);
+   font-size: var(--font-size-2xl);
+   text-align: center;
+}
+
+.hidden-body {
+   color: var(--color-text-planet-error);
+   text-align: center;
+   margin-top: var(--space-4);
+}
+
+/* found card */
+
+/* grid */
+.pp-grid {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   column-gap: var(--space-7);
+}
+
+.grid-side {
+   grid-row: 1 / 3;
+}
+
+.grid-top,
+.grid-bottom {
+   min-width: 0;
+   overflow-wrap: anywhere;
+}
+
+/* styling */
+#pp-image {
+   width: 117px;
+   height: 117px;
+   object-fit: cover;
+   border-radius: var(--radius-full);
+}
+
+#pp-name {
+   font-size: var(--font-size-3xl);
+   color: var(--color-text-planet-dark);
+   line-height: 120%;
+}
+
+#pp-type {
+   font-size: var(--font-size-md);
+   color: var(--color-text-planet-type);
+   margin-bottom: var(--space-6);
+}
+
+#pp-desc {
+   font-size: var(--font-size-sm);
+   color: var(--color-text-planet-para);
+   margin-bottom: var(--space-6);
+}
+
+.pp-stats {
+   background-color: var(--color-bg-main);
+   border-radius: var(--radius-sm);
+   padding: var(--space-4) var(--space-7);
+   margin-bottom: var(--space-6);
+   display: flex;
+   gap: var(--space-4);
+   justify-content: space-between;
+}
+
+.pp-stat {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   align-items: start;
+}
+
+.pp-label {
+   font-size: var(--font-size-xs);
+   color: var(--color-text-stats-light);
+}
+
+.pp-value {
+   font-size: var(--font-size-2xl);
+   font-weight: bold;
+   color: var(--color-text-planet-dark);
+}
+
+.pp-info {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: var(--space-4);
+}
+
+.pp-mini {
+   display: flex;
+   gap: var(--space-4);
+   align-items: center;
+}
+
+.pp-mini path {
+   fill: var(--color-icon);
+}
+
+.pp-mini span {
+   color: var(--color-text-stats-light);
+   font-size: var(--font-size-sm);
+}
+
+/* responsive design */
+@media screen and (max-width: 767px) {
+   /* grid */
+   .grid-side {
+      grid-row: 1;
+   }
+   .grid-bottom {
+      grid-column: 1 / -1;
+      margin-top: var(--space-6);
+   }
+   /* styling */
+   .pp-state {
+      padding: 2rem 1.5rem;
+   }
+   #pp-type {
+         margin-bottom: 0;
+   }
+   #pp-image {
+      width: 77px;
+      height: 77px;
+   }
+   .pp-stats {
+      flex-direction: column;
+      padding-inline: 1.25rem;
+   }
+   .pp-info {
+   grid-template-columns: 1fr;
+   }
+}
