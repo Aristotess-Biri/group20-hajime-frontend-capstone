@@ -90,7 +90,7 @@ The entire interface supports both light and dark modes, with full hover, focus,
 | Search bar (JS) | [Adedoyin Daniel][doyin] |
 | Planet profile (markup) | [Olatunji David Seun][seun] |
 | Planet profile (styling) | [Ufuophu-Biri Aristotess][aris], [Emmanuel Ushahemba Bur][bur] |
-| Planet profile (JS) | [Emmanuel Ushahemba Bur][bur], [Adedoyin Daniel][doyin] |
+| Planet profile (JS) | [Adedoyin Daniel][doyin]<!--, [Emmanuel Ushahemba Bur][bur]--> |
 | Planetary facts and table | [Owoyemi Mubeen Abdulgafar][abdul] |
 | Footer | [Osarinmwian Brownson][brown] |
 | Deployment | [Ufuophu-Biri Aristotess][aris] |
@@ -106,8 +106,10 @@ These are the JavaScript behaviours behind the page.
 | Fetch planet data | Loads the planet list from the API | [Adedoyin Daniel][doyin] |
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
 | Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
-| Loading planet | Shows loading message when planet is searched for | in progress |
-| Failed fetch | Shows a failed search message when fetch fails | in progress |
+<!-- 
+| Loading planet | Shows loading message when planet is searched for | [Emmanuel Ushahemba Bur][bur] |
+| Failed fetch | Shows a failed search message when fetch fails | [Emmanuel Ushahemba Bur][bur] | 
+-->
 
 #### Support
 | **Section** | **Member** |
@@ -208,6 +210,7 @@ Here are some resources we found useful during the course of this project
 - The "Developer's Bible", [MDN Web Docs](https://developer.mozilla.org/en-US/)
 - W3C [HTML validator](https://validator.w3.org/)
 - W3C's [CSS validator](https://jigsaw.w3.org/css-validator/)
+- [JSHint](https://jshint.com/)
 - The Odin Project's [Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git) lesson
 - [Git Flow](https://docs.github.com/en/get-started/using-github/github-flow) from GitHub Docs
 - Cameron McKenzie's video on [Git Commit Messages](https://youtu.be/9ilpKtF0KGQ?si=O0kHri2kctgvybQ_)
