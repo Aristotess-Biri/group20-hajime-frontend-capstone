@@ -66,7 +66,7 @@ color bash
 mind-width
 .search-input { min-widh:0;
               }
-fontt-change bash
+font-change bash
 @media (max-width:445px){
    .search-input, .error{
       font-size: var(--font-size-xs);
