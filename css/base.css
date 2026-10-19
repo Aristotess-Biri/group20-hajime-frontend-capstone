@@ -33,6 +33,9 @@ body {
   color: var(--color-text-facts-para);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+  padding-block: clamp(var(--space-7), 13.4vw - 3.93rem, var(--space-13));
 }
 
 

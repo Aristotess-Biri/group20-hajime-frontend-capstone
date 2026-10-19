@@ -9,9 +9,7 @@
    align-items: center;
    justify-content: space-between;
    gap: var(--space-3);
-   max-width: var(--container-width);
    height: var(--search-height);
-   margin: 0 auto ;
    padding: var(--space-2) var(--space-3) var(--space-2) var(--space-6);
    border-radius: var(--radius-lg);
    box-shadow: var(--shadow-card);

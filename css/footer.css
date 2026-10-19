@@ -9,10 +9,6 @@
 }
 
 .site-footer__container {
-  width: 100%;
-  max-width: var(--container-width);
-  margin-inline: auto;
-  padding-inline: var(--space-6);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
