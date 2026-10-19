@@ -62,9 +62,10 @@
 .search-input::placeholder{
    color:var(--color-text-search-placeholder);
 }
-.search-input { min-widh:0;
-              }
-font-change bash
+.search-input { 
+       min-width: 0;
+}
+
 @media (max-width:445px){
    .search-input, .error{
       font-size: var(--font-size-xs);
