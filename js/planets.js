@@ -123,4 +123,4 @@ async function setupSearch() {
       }
    });
 }
-setupSearch()
+setupSearch();

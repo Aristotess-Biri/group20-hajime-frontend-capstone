@@ -1,2 +1,256 @@
-# group20-hajime-capstone
+# group20-hajime-capstone | TS Academy
 Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
+
+## Table of Contents
+
+- [Live Demo](#live-demo)
+- [Repository](#repository)
+- [Project Summary](#project-summary)
+- [Built With](#built-with)
+- [Meet the Team](#meet-the-team)
+    - [Team Member Info](#team-member-info)
+    - [Work Breakdown](#work-breakdown)
+        - [By component](#by-component)
+        - [By function](#by-function)
+        - [Support](#support)
+- [Want to run our project?](#want-to-run-our-project)
+- [Project Structure](#project-structure)
+- [How We Worked](#how-we-worked)
+- [Resources](#resources)
+- [Acknowledgments](#acknowledgments)
+
+
+## Live Demo
+<https://group20-hajime-frontend.netlify.app>
+
+## Repository
+<https://github.com/Aristotess-Biri/group20-hajime-frontend-capstone>
+
+## Project Summary
+
+A responsive web application that fetches planet data from an API and lets users search for a planet to view its stats, alongside a static table of facts about our solar system. 
+
+The entire interface supports both light and dark modes, with full hover, focus, and error states, and adapts to mobile, tablet, and desktop screens.
+<!-- Screenshots of page -->
+<p align="center">
+  <img src="docs/desktop-light.png" alt="Desktop view in light mode showing the default planet" width="49%">
+  <img src="docs/desktop-dark.png" alt="Desktop view in dark mode showing the default planet" width="49%">
+</p>
+
+<p align="center">
+  <img src="docs/tablet-light.png" alt="Tablet view in light mode showing a searched planet" width="36%">
+  <img src="docs/tablet-dark.png" alt="Tablet view in dark mode showing a searched planet" width="36%">
+</p>
+
+<p align="center">
+  <img src="docs/mobile-light.png" alt="Mobile view in light mode showing error message" width="24%">
+  <img src="docs/mobile-dark.png" alt="Mobile view in dark mode showing error message" width="24%">
+</p>
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+
+## Built With
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+- ![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
+
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+- ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+- ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+## Meet the Team
+
+<a href="https://github.com/Aristotess-Biri/group20-hajime-frontend-capstone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aristotess-Biri/group20-hajime-frontend-capstone" />
+</a>
+
+### Team Member Info
+
+| **Name** | **GitHub profile** |
+| --- | --- |
+| Ufuophu-Biri Aristotess (*team lead*) | <https://github.com/Aristotess-Biri> |
+| Emelife Henry Chibuike (*assistant team lead*) | <https://github.com/21sezha> |
+| Olatunji David Seun | <https://github.com/Seun-David2002> |
+| Onyasi Wilmot Ibebi | <https://github.com/Wilmotgit> |
+| Raji Nawal | <https://github.com/Nawal734> |
+| Ogundein Priscilla | <https://github.com/priscilla-lite9> |
+| Adedoyin Daniel | <https://github.com/Oyinade24> |
+| Emmanuel Ushahemba Bur | <https://github.com/Emmanuel-Ushahemba-Bur> |
+| Owoyemi Mubeen Abdulgafar | <https://github.com/Algiffary04> |
+| Osarinmwian Brownson | <https://github.com/osarinmwianbrownson-lab> |
+
+
+### Work Breakdown
+
+#### By component
+| **Component** | **Built by** |
+| --- | --- |
+| Page skeleton (HTML, JS) | [Olatunji David Seun][seun] |
+| Base styles, design tokens (CSS) | [Onyasi Wilmot Ibebi][wilmot] |
+| Colour tokens (CSS) | [Ufuophu-Biri Aristotess][aris] |
+| Header and theme toggle JS | [Raji Nawal][nawal] |
+| Search bar (markup and styling) | [Ogundein Priscilla][priscilla] |
+| Search bar (JS) | [Adedoyin Daniel][doyin] |
+| Planet profile (markup) | [Olatunji David Seun][seun] |
+| Planet profile (styling) | [Ufuophu-Biri Aristotess][aris], [Emmanuel Ushahemba Bur][bur] |
+| Planet profile (JS) | [Adedoyin Daniel][doyin], [Emmanuel Ushahemba Bur][bur] |
+| Planetary facts and table | [Owoyemi Mubeen Abdulgafar][abdul] |
+| Footer | [Osarinmwian Brownson][brown] |
+| Deployment | [Ufuophu-Biri Aristotess][aris] |
+| Coordination, README, pull request reviews | [Ufuophu-Biri Aristotess][aris], [Emelife Henry Chibuike][henry] |
+| Final review and fixes to live site | [Owoyemi Mubeen Abdulgafar][abdul], [Olatunji David Seun][seun], [Ufuophu-Biri Aristotess][aris], [Emelife Henry Chibuike][henry] |
+
+#### By function
+These are the JavaScript behaviours behind the page.
+
+| **Function** | **What it does** | **Built by** |
+| --- | --- | --- |
+| Theme toggle | Switches light/dark mode and remembers the choice | [Raji Nawal][nawal] |
+| Fetch planet data | Loads the planet list from the API | [Adedoyin Daniel][doyin] |
+| Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
+| Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
+| Loading planet | Shows loading state when planet is searched for | [Emmanuel Ushahemba Bur][bur] |
+| Failed fetch | Shows a "failed" message if fetch fails | [Emmanuel Ushahemba Bur][bur] | 
+
+#### Support
+| **Section** | **Member** |
+| --- | --- |
+| Search (JS) | [Osarinmwian Brownson][brown] |
+| Planet profile (JS) | [Onyasi Wilmot Ibebi][wilmot] |
+| Deployment | [Emelife Henry Chibuike][henry] |
+
+> [!NOTE]
+> Support roles were for guidance and advice, so they do not own code in that section.
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+## Want to run our project?
+Follow these steps to get the project running on your local machine:
+
+1. **Prerequisites**.
+
+    You'll  need VS Code, Git, Live Server extension for VS Code, and a stable internet connnection.
+
+2. **Clone the repo**.
+
+    In your terminal, run the following command:
+
+    ```bash
+    git clone https://github.com/Aristotess-Biri/group20-hajime-frontend-capstone.git
+    ```
+
+3. **Open the folder in VS Code**.
+
+    Change directories into the folder:
+
+    ```bash
+    cd group20-hajime-frontend-capstone
+    ```
+
+    Then open it directly in VS Code:
+
+    ```bash
+    code .
+    ```
+
+4. **View the project in your browser**.
+
+    Right-click index.html and choose **Open with Live Server**.
+
+> [!TIP]
+> Alternatively, use the keyboard shortcut: <kbd>Alt</kbd> + <kbd>L</kbd> <kbd>Alt</kbd> + <kbd>O</kbd>.
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+## Project Structure
+```bash
+group20-hajime-frontend-capstone/
+├── .github/
+│     └── pull_request_template.md
+├── css/
+│     ├── base.css
+│     ├── footer.css
+│     ├── header.css
+│     ├── planet-profile.css
+│     ├── search.css
+│     └── table.css
+├── docs/
+│     └── README images
+├──favicon/favicon
+│     └── favicon files
+├── images/
+│     └── icons and images
+├── js/
+│     ├── planets.js
+│     └── theme.js
+├── README.md
+└── index.html
+```
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+ 
+## How We Worked
+- One branch per task
+- Branches merged through pull requests 
+- Merging required at least one review from someone other than the author
+- Tasks tracked on a GitHub Project board
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+## Resources
+Here are some resources we found useful during the course of this project
+
+- Class recordings and materials from [TS Academy](https://tsacademyonline.com/)
+- The "Developer's Bible", [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [W3C HTML validator](https://validator.w3.org/)
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
+- [JSHint](https://jshint.com/)
+- The Odin Project's [Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git) lesson
+- [Git Flow](https://docs.github.com/en/get-started/using-github/github-flow) from GitHub Docs
+- Cameron McKenzie's video on [Git Commit Messages](https://youtu.be/9ilpKtF0KGQ?si=O0kHri2kctgvybQ_)
+- Josh Comeau's [Interactive Guide to CSS Grid](https://www.joshwcomeau.com/css/interactive-guide-to-grid/)
+- W3School's [JavaScript Tutorial](https://www.w3schools.com/js/)
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+## Acknowledgments
+- [Design](https://www.figma.com/design/IhNMADS0jxaEeafBRK9KAj/Hajime-cohort?node-id=94702-193&t=dNiCckUK3dEGLgyM-1) by [Amaka N](http://amakandukwu.com/)
+- Built as part of [TS Academy](https://tsacademyonline.com/)
+- Planet data: the [API](https://anurella.github.io/json/planet.json) provided for the project
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+<!-- Profile links -->
+[aris]: https://github.com/Aristotess-Biri
+[henry]: https://github.com/21sezha
+[seun]: https://github.com/Seun-David2002
+[wilmot]: https://github.com/Wilmotgit
+[nawal]: https://github.com/Nawal734
+[priscilla]: https://github.com/priscilla-lite9
+[doyin]: https://github.com/Oyinade24
+[bur]: https://github.com/Emmanuel-Ushahemba-Bur
+[abdul]: https://github.com/Algiffary04
+[brown]: https://github.com/osarinmwianbrownson-lab
