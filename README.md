@@ -104,7 +104,7 @@ The entire interface supports both light and dark modes, with full hover, focus,
 | Search bar (JS) | [Adedoyin Daniel][doyin] |
 | Planet profile (markup) | [Olatunji David Seun][seun] |
 | Planet profile (styling) | [Ufuophu-Biri Aristotess][aris], [Emmanuel Ushahemba Bur][bur] |
-| Planet profile (JS) | [Adedoyin Daniel][doyin]<!--, [Emmanuel Ushahemba Bur][bur]--> |
+| Planet profile (JS) | [Adedoyin Daniel][doyin], [Emmanuel Ushahemba Bur][bur] |
 | Planetary facts and table | [Owoyemi Mubeen Abdulgafar][abdul] |
 | Footer | [Osarinmwian Brownson][brown] |
 | Deployment | [Ufuophu-Biri Aristotess][aris] |
@@ -120,10 +120,8 @@ These are the JavaScript behaviours behind the page.
 | Fetch planet data | Loads the planet list from the API | [Adedoyin Daniel][doyin] |
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
 | Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
-<!-- 
-| Loading planet | Shows loading message when planet is searched for | [Emmanuel Ushahemba Bur][bur] |
-| Failed fetch | Shows a failed search message when fetch fails | [Emmanuel Ushahemba Bur][bur] | 
--->
+| Loading planet | Shows loading state when planet is searched for | [Emmanuel Ushahemba Bur][bur] |
+| Failed fetch | Shows a failed search message if fetch fails | [Emmanuel Ushahemba Bur][bur] | 
 
 #### Support
 | **Section** | **Member** |
