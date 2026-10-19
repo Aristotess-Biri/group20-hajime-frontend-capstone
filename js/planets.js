@@ -74,10 +74,25 @@ const profileFound = document.getElementById("pp-found");
 
 const profileNoResults = document.getElementById("pp-no-results");
 
+const loadingElement = document.getElementById("pp-loading");
+
 
 async function setupSearch() {
+    loadingElement.classList.add("active");
+
    // Fetch the planetary data
     const planets = await fetchPlanets();
+
+    loadingElement.classList.remove("active");
+
+    if (!planets || planets.length === 0) {
+        errorElement.textContent = "Failed to load solar system database. Please check your internet connection.";
+        searchButton.disabled = true;
+        searchInput.disabled = true;
+        return;
+    }
+
+    defaultPlanet(planets);
 
    searchInput.addEventListener("keydown", function (event) {
       
@@ -96,6 +111,13 @@ async function setupSearch() {
         defaultPlanet(planets);
         return;
       }
+
+      loadingElement.classList.add("active");
+      profileFound.classList.add("pp-hidden");
+      profileNoResults.classList.add("pp-hidden");
+      errorElement.textContent = "";
+      
+    setTimeout(function () {
       // Find a planet whose name matches the search
       const planet = planets.find(function (item) {
             return item.name.toLowerCase() === searchText;
@@ -121,6 +143,10 @@ async function setupSearch() {
             // Show the no-results section
             profileNoResults.classList.remove("pp-hidden");
       }
+
+      loadingElement.classList.remove("active");
+
+      }, 500);
    });
 }
 setupSearch();

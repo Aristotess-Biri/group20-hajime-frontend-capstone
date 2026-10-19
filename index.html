@@ -26,10 +26,8 @@
         <link rel="stylesheet" href="css/table.css">
         <link rel="stylesheet" href="css/footer.css">
 
-        <script defer src="js/fetch.js"></script>
+        <script defer src="js/planets.js"></script>
         <script defer src="js/theme.js"></script>
-        <script defer src="js/planet-profile.js"></script>
-        <script defer src="js/search.js"></script>
     </head>
     <body>
 <!-- Header -->
@@ -111,6 +109,11 @@
                     <button class="search-button" type="button">Search</button>
                     
                  </form>
+            </div>
+
+            <div id="pp-loading">
+              <div class="spinner"></div>
+              <div>Loading planet, please wait...</div>
             </div>
 
             <section class="planet-profile">
