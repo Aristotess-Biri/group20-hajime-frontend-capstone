@@ -56,6 +56,25 @@
    outline: 2px solid var(--color-primary);
    outline-offset: 3px;
    }
+.search-input{
+   color: var(--color-text-search);
+}
+.search-input::placeholder{
+   color:var(--color-text-search-placeholder);
+}
+.search-input { 
+       min-width: 0;
+}
+
+.search {
+     margin-bottom: var(--space-8);
+}
+
+@media (max-width: 445px) {
+   .search-input, .error{
+        font-size: var(--font-size-xs);
+   }
+}
 
 @media (prefers-color-scheme: dark){
    .search-form{
