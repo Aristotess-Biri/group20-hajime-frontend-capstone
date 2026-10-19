@@ -95,7 +95,7 @@ The entire interface supports both light and dark modes, with full hover, focus,
 | Footer | [Osarinmwian Brownson][brown] |
 | Deployment | [Ufuophu-Biri Aristotess][aris] |
 | Coordination, README, pull request reviews | [Ufuophu-Biri Aristotess][aris], [Emelife Henry Chibuike][henry] |
-| Final review of live site | [Ufuophu-Biri Aristotess][aris], [Emelife Henry Chibuike][henry] |
+| Final review and fixes to live site | [Owoyemi Mubeen Abdulgafar][abdul], [Olatunji David Seun][seun], [Ufuophu-Biri Aristotess][aris], [Emelife Henry Chibuike][henry] |
 
 #### By function
 These are the JavaScript behaviours behind the page.
@@ -105,8 +105,8 @@ These are the JavaScript behaviours behind the page.
 | Theme toggle | Switches light/dark mode and remembers the choice | [Raji Nawal][nawal] |
 | Fetch planet data | Loads the planet list from the API | [Adedoyin Daniel][doyin] |
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
-| Loading planet | Shows loading message when planet is searched for | in progress |
 | Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
+| Loading planet | Shows loading message when planet is searched for | in progress |
 | Failed fetch | Shows a failed search message when fetch fails | in progress |
 
 #### Support
