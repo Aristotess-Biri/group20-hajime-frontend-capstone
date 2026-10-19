@@ -16,6 +16,7 @@ Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
 - [Want to run our project?](#want-to-run-our-project)
 - [Project Structure](#project-structure)
 - [How We Worked](#how-we-worked)
+- [Resources](#resources)
 - [Acknowledgments](#acknowledgments)
 
 
@@ -38,18 +39,28 @@ The entire interface supports both light and dark modes, with full hover, focus,
 
 
 ## Built With
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+- ![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
+
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+- ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+- ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
 <div align="right">
   <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
 </div>
 
 ## Meet the Team
+
+<a href="https://github.com/Aristotess-Biri/group20-hajime-frontend-capstone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aristotess-Biri/group20-hajime-frontend-capstone" />
+</a>
+
 ### Team Member Info
 
 | **Name** | **GitHub profile** |
@@ -79,11 +90,12 @@ The entire interface supports both light and dark modes, with full hover, focus,
 | Search bar (JS) | [Adedoyin Daniel][doyin] |
 | Planet profile (markup) | [Olatunji David Seun][seun] |
 | Planet profile (styling) | [Ufuophu-Biri Aristotess][aris], [Emmanuel Ushahemba Bur][bur] |
-| Planet profile (JS) | [Emmanuel Ushahemba Bur][bur] |
+| Planet profile (JS) | [Emmanuel Ushahemba Bur][bur], [Adedoyin Daniel][doyin] |
 | Planetary facts and table | [Owoyemi Mubeen Abdulgafar][abdul] |
 | Footer | [Osarinmwian Brownson][brown] |
 | Deployment | [Ufuophu-Biri Aristotess][aris] |
 | Coordination, README, pull request reviews | [Ufuophu-Biri Aristotess][aris], [Emelife Henry Chibuike][henry] |
+| Final review of live site | [Ufuophu-Biri Aristotess][aris], [Emelife Henry Chibuike][henry] |
 
 #### By function
 These are the JavaScript behaviours behind the page.
@@ -93,7 +105,9 @@ These are the JavaScript behaviours behind the page.
 | Theme toggle | Switches light/dark mode and remembers the choice | [Raji Nawal][nawal] |
 | Fetch planet data | Loads the planet list from the API | [Adedoyin Daniel][doyin] |
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
+| Loading planet | Shows loading message when planet is searched for | in progress |
 | Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
+| Failed fetch | Shows a failed search message when fetch fails | in progress |
 
 #### Support
 | **Section** | **Member** |
@@ -178,8 +192,25 @@ group20-hajime-frontend-capstone/
 </div>
  
 ## How We Worked
-- One branch per task, merged through pull requests with at least one review from someone other than the author
+- One branch per task
+- Branches merged through pull requests 
+- Merging required at least one review from someone other than the author
 - Tasks tracked on a GitHub Project board
+
+<div align="right">
+  <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
+</div>
+
+## Resources
+Here are some resources we found useful during the course of this project
+
+- Class recordings and materials from [TS Academy](https://tsacademyonline.com/)
+- The "Developer's Bible", [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- W3C [HTML validator](https://validator.w3.org/)
+- W3C's [CSS validator](https://jigsaw.w3.org/css-validator/)
+- The Odin Project's [Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git) lesson
+- [Git Flow](https://docs.github.com/en/get-started/using-github/github-flow) from GitHub Docs
+- Cameron McKenzie's video on [Git Commit Messages](https://youtu.be/9ilpKtF0KGQ?si=O0kHri2kctgvybQ_)
 
 <div align="right">
   <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
