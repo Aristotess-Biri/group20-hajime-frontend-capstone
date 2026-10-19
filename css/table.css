@@ -4,9 +4,8 @@
 ========================================================= */
 /* ----Section wrapper----*/
 .planet-fact {
-   max-width: 730px;
-   margin: 40px auto;
-   padding: 24px;
+   margin-block: 40px;
+   padding-block: 24px;
 }
 /* ----Title---- */
 .planet-fact_title {
@@ -97,8 +96,8 @@
 /* ----Small screens---- */
 @media (max-width: 767px) {
   .planet-fact { 
-   padding: 16px;
-   margin:24px auto; 
+   padding-block: 16px;
+   margin-block:24px; 
 }
   .planet-fact_title { 
    font-size: 1.5rem; 
