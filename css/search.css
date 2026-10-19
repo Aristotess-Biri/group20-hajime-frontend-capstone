@@ -62,7 +62,6 @@
 .search-input::placeholder{
    color:var(--color-text-search-placeholder);
 }
-mind-width
 .search-input { min-widh:0;
               }
 font-change bash
