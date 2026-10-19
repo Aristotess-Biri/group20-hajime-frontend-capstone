@@ -74,11 +74,11 @@ The entire interface supports both light and dark modes, with full hover, focus,
 | Page skeleton (HTML, JS) | [Olatunji David Seun][seun] |
 | Base styles, design tokens (CSS) | [Onyasi Wilmot Ibebi][wilmot] |
 | Colour tokens (CSS) | [Ufuophu-Biri Aristotess][aris] |
-| Header and theme toggle | [Raji Nawal][nawal] |
+| Header and theme toggle JS | [Raji Nawal][nawal] |
 | Search bar (markup and styling) | [Ogundein Priscilla][priscilla] |
 | Search bar (JS) | [Adedoyin Daniel][doyin] |
 | Planet profile (markup) | [Olatunji David Seun][seun] |
-| Planet profile (styling) | [Ufuophu-Biri Aristotess][aris] |
+| Planet profile (styling) | [Ufuophu-Biri Aristotess][aris], [Emmanuel Ushahemba Bur][bur] |
 | Planet profile (JS) | [Emmanuel Ushahemba Bur][bur] |
 | Planetary facts and table | [Owoyemi Mubeen Abdulgafar][abdul] |
 | Footer | [Osarinmwian Brownson][brown] |
@@ -91,9 +91,9 @@ These are the JavaScript behaviours behind the page.
 | **Function** | **What it does** | **Built by** |
 | --- | --- | --- |
 | Theme toggle | Switches light/dark mode and remembers the choice | [Raji Nawal][nawal] |
-| Fetch planet data | Loads the planet list from the API | [Emmanuel Ushahemba Bur][bur] |
+| Fetch planet data | Loads the planet list from the API | [Adedoyin Daniel][doyin] |
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
-| Show a planet | Fills the planet card with the chosen planet's details | [Emmanuel Ushahemba Bur][bur] |
+| Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
 
 #### Support
 | **Section** | **Member** |
