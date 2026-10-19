@@ -146,7 +146,7 @@ async function setupSearch() {
 
       loadingElement.classList.remove("active");
 
-      }, 1000);
+      }, 500);
    });
 }
 setupSearch();
