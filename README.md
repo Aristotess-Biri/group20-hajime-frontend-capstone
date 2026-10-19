@@ -121,7 +121,7 @@ These are the JavaScript behaviours behind the page.
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
 | Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
 | Loading planet | Shows loading state when planet is searched for | [Emmanuel Ushahemba Bur][bur] |
-| Failed fetch | Shows a failed search message if fetch fails | [Emmanuel Ushahemba Bur][bur] | 
+| Failed fetch | Shows a "failed" message if fetch fails | [Emmanuel Ushahemba Bur][bur] | 
 
 #### Support
 | **Section** | **Member** |
