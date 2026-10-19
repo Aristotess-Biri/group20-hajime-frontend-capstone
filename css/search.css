@@ -56,6 +56,25 @@
    outline: 2px solid var(--color-primary);
    outline-offset: 3px;
    }
+color bash
+.search-input{
+   color: var(--color-text-search);
+}
+.search-input::placeholder{
+   color:var(--color-text-search-placeholder);
+}
+mind-width
+.search-input { min-widh:0;
+              }
+fontt-change bash
+@media (max-width:445px){
+   .search-input, .error{
+      font-size: var(--font-size-xs);
+   }
+}
+margin bash
+.search{margin-botttom: var(--space-8);
+       }
 
 @media (prefers-color-scheme: dark){
    .search-form{
