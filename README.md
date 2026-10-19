@@ -27,11 +27,25 @@ Capstone project by TS Academy Hajime cohort Frontend Development Group 20.
 <https://github.com/Aristotess-Biri/group20-hajime-frontend-capstone>
 
 ## Project Summary
-<!-- Screenshot of page -->
 
 A responsive web application that fetches planet data from an API and lets users search for a planet to view its stats, alongside a static table of facts about our solar system. 
 
 The entire interface supports both light and dark modes, with full hover, focus, and error states, and adapts to mobile, tablet, and desktop screens.
+<!-- Screenshots of page -->
+<p align="center">
+  <img src="docs/desktop-light.png" alt="Desktop view in light mode showing the default planet" width="49%">
+  <img src="docs/desktop-dark.png" alt="Desktop view in dark mode showing the default planet" width="49%">
+</p>
+
+<p align="center">
+  <img src="docs/tablet-light.png" alt="Tablet view in light mode showing a searched planet" width="36%">
+  <img src="docs/tablet-dark.png" alt="Tablet view in dark mode showing a searched planet" width="36%">
+</p>
+
+<p align="center">
+  <img src="docs/mobile-light.png" alt="Mobile view in light mode showing error message" width="24%">
+  <img src="docs/mobile-dark.png" alt="Mobile view in dark mode showing error message" width="24%">
+</p>
 
 <div align="right">
   <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
@@ -170,7 +184,6 @@ Follow these steps to get the project running on your local machine:
 group20-hajime-frontend-capstone/
 ├── .github/
 │     └── pull_request_template.md
-│
 ├── css/
 │     ├── base.css
 │     ├── footer.css
@@ -178,12 +191,14 @@ group20-hajime-frontend-capstone/
 │     ├── planet-profile.css
 │     ├── search.css
 │     └── table.css
+├── docs/
+│     └── README images
+├──favicon/favicon
+│     └── favicon files
 ├── images/
 │     └── icons and images
 ├── js/
-│     ├── fetch.js
-│     ├── planet-profile.js
-│     ├── search.js
+│     ├── planets.js
 │     └── theme.js
 ├── README.md
 └── index.html
