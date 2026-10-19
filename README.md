@@ -120,14 +120,14 @@ These are the JavaScript behaviours behind the page.
 | Fetch planet data | Loads the planet list from the API | [Adedoyin Daniel][doyin] |
 | Search | Finds a planet by name and shows a "no results" message if there is none | [Adedoyin Daniel][doyin] |
 | Show a planet | Fills the planet card with the chosen planet's details | [Adedoyin Daniel][doyin] |
-| Loading planet | Shows loading state when planet is searched for | [Emmanuel Ushahemba Bur][bur] |
-| Failed fetch | Shows a "failed" message if fetch fails | [Emmanuel Ushahemba Bur][bur] | 
+| Loading planet | Shows loading state when planet is searched for | [Ufuophu-Biri Aristotess][aris] |
+| Failed fetch | Shows a "failed" message if fetch fails | [Ufuophu-Biri Aristotess][aris] | 
 
 #### Support
 | **Section** | **Member** |
 | --- | --- |
 | Search (JS) | [Osarinmwian Brownson][brown] |
-| Planet profile (JS) | [Onyasi Wilmot Ibebi][wilmot] |
+| Planet profile (JS) | [Onyasi Wilmot Ibebi][wilmot], [Emmanuel Ushahemba Bur][bur] |
 | Deployment | [Emelife Henry Chibuike][henry] |
 
 > [!NOTE]
