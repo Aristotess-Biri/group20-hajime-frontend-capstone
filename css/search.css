@@ -66,14 +66,15 @@
        min-width: 0;
 }
 
-@media (max-width:445px){
+.search {
+     margin-bottom: var(--space-8);
+}
+
+@media (max-width: 445px) {
    .search-input, .error{
-      font-size: var(--font-size-xs);
+        font-size: var(--font-size-xs);
    }
 }
-margin bash
-.search{margin-botttom: var(--space-8);
-       }
 
 @media (prefers-color-scheme: dark){
    .search-form{
