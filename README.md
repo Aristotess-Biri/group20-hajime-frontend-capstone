@@ -223,12 +223,14 @@ Here are some resources we found useful during the course of this project
 
 - Class recordings and materials from [TS Academy](https://tsacademyonline.com/)
 - The "Developer's Bible", [MDN Web Docs](https://developer.mozilla.org/en-US/)
-- W3C [HTML validator](https://validator.w3.org/)
-- W3C's [CSS validator](https://jigsaw.w3.org/css-validator/)
+- [W3C HTML validator](https://validator.w3.org/)
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
 - [JSHint](https://jshint.com/)
 - The Odin Project's [Setting up Git](https://www.theodinproject.com/lessons/foundations-setting-up-git) lesson
 - [Git Flow](https://docs.github.com/en/get-started/using-github/github-flow) from GitHub Docs
 - Cameron McKenzie's video on [Git Commit Messages](https://youtu.be/9ilpKtF0KGQ?si=O0kHri2kctgvybQ_)
+- Josh Comeau's [Interactive Guide to CSS Grid](https://www.joshwcomeau.com/css/interactive-guide-to-grid/)
+- W3School's [JavaScript Tutorial](https://www.w3schools.com/js/)
 
 <div align="right">
   <a href="#group20-hajime-capstone--ts-academy">Back to top ↑</a>
